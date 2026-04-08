@@ -62,6 +62,57 @@ Specific objectives include:
 
 ---
 
+## DAX Calculations
+
+- Total Customers = DISTINCTCOUNT(customer_accounts[account_id])
+
+- Total ARR = SUM(customer_subscriptions[arr_amount])
+
+- Total MRR = SUM(customer_subscriptions[mrr_amount])
+
+- Churn Rate = DIVIDE(DISTINCTCOUNT(customer_churn_details[account_id]),DISTINCTCOUNT(customer_accounts[account_id]))
+
+- Auto Renew % = DIVIDE([Auto Renew Customers], COUNTROWS(customer_subscriptions), 0)
+
+- Upgrade Rate % = DIVIDE([Upgraded Customers], COUNTROWS(customer_subscriptions), 0)
+
+- Plan Tier Churn % = DIVIDE(CALCULATE(COUNTROWS(customer_subscriptions),customer_subscriptions[churn_flag] = TRUE()),COUNTROWS(customer_subscriptions),0)
+
+- Upgraded Customers = CALCULATE(COUNTROWS(customer_subscriptions),customer_subscriptions[upgrade_flag] = TRUE())
+
+- Downgraded Customers = CALCULATE(COUNTROWS(customer_subscriptions),customer_subscriptions[downgrade_flag] = TRUE())
+
+- Total Feature Usage = SUM(product_usage_metrics[usage_count])
+
+- Average Usage Duration = AVERAGE(product_usage_metrics[usage_duration_seconds])
+
+- Avg Usage Count per Subscription = DIVIDE(SUM(product_usage_metrics[usage_count]),DISTINCTCOUNT(product_usage_metrics[subscription_id]),0)
+
+- Beta Feature Error Count = CALCULATE(SUM(product_usage_metrics[error_count]),product_usage_metrics[is_beta_feature] = TRUE())
+
+- Average Satisfaction = AVERAGE(customer_support_tickets[satisfaction_score])
+
+- Average Resolution Time = AVERAGE(customer_support_tickets[resolution_time_hours])
+
+- Escalated Ticket % = DIVIDE(CALCULATE(COUNTROWS(customer_support_tickets),customer_support_tickets[escalation_flag] = TRUE()),COUNTROWS(customer_support_tickets),0)
+
+- Churned Customers = DISTINCTCOUNT(customer_churn_details[account_id])
+
+- Avg Resolution Time (Churned) = ROUND(CALCULATE(AVERAGE(customer_support_tickets[resolution_time_hours]),customer_support_tickets[Customer Status] = "Churned"),2)
+
+- Escalated Ticket % (Churned) = CALCULATE(AVERAGEX(customer_support_tickets, IF(customer_support_tickets[escalation_flag] =    TRUE(),1,0)),customer_support_tickets[Customer Status] = "Churned")
+
+- Churn Count = CALCULATE(COUNT(customer_churn_details[account_id]),customer_subscriptions[churn_flag] = TRUE())
+
+- Selected Customer ARR Display = IF(HASONEVALUE(customer_accounts[account_name]),FORMAT([Selected Customer ARR], "$#,##0"),"Select a Customer")
+
+- Selected Customer MRR Display = IF(HASONEVALUE(customer_accounts[account_name]),FORMAT([Selected Customer MRR], "$#,##0"),"Select a Customer")
+
+- Total Feature Usage = SUM(product_usage_metrics[usage_count])
+
+
+---
+
 ## Tools Used
 
 ### Excel
@@ -115,22 +166,22 @@ Specific objectives include:
 
 ## Data Workflow
 
-- Imported raw Excel datasets into Excel and reviewed the structure of all tables.
+1. Imported raw Excel datasets into Excel and reviewed the structure of all tables.
   
-- Cleaned and standardized the data before loading it into Power BI.
+2. Cleaned and standardized the data before loading it into Power BI.
   
-- In the subscriptions table, created a new column named subscription_status immediately beside end_date using:
-  =IF(end_date cell="","Active","Ended")
-This was used to clearly distinguish active and ended subscriptions before further analysis.
+3. In the subscriptions table, created a new column named subscription_status immediately beside end_date using:
+   =IF(end_date cell="","Active","Ended")
+   This was used to clearly distinguish active and ended subscriptions before further analysis.
 
-- Loaded the cleaned datasets into SQL and created queries to analyze churn, revenue, support, and product usage.
+4. Loaded the cleaned datasets into SQL and created queries to analyze churn, revenue, support, and product usage.
   
-- Imported the cleaned tables into Power BI and built relationships between customers, subscriptions, support tickets, product usage, and churn data.
+5. Imported the cleaned tables into Power BI and built relationships between customers, subscriptions, support tickets, product usage, and churn data.
   
-- Created DAX measures for KPIs such as churn rate, MRR, ARR, escalation percentage, resolution time, usage duration, and customer-level metrics.
+6. Created DAX measures for KPIs such as churn rate, MRR, ARR, escalation percentage, resolution time, usage duration, and customer-level metrics.
   
-- Designed five dashboard pages to analyze different parts of the business.
+7. Designed five dashboard pages to analyze different parts of the business.
   
-- Added slicers, page navigation buttons, and a customer deep-dive page for interactive analysis.
+8. Added slicers, page navigation buttons, and a customer deep-dive page for interactive analysis.
   
-- Converted the final findings into business insights and recommendations.
+9. Converted the final findings into business insights and recommendations.
