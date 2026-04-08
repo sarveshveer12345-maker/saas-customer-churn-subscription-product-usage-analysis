@@ -81,6 +81,10 @@ Specific objectives include:
 
 ---
 
+### Dataset Preview
+
+![Customer Churn Table Preview](customer_churn_table_preview.png)
+
 ## Customer Churn Table
 
 | Attribute | Details |
@@ -92,6 +96,11 @@ Specific objectives include:
 | Key Columns | `account_id`, `reason_code`, `preceding_downgrade_flag` |
 | Used For | Churn reason analysis, downgrade-before-churn analysis, churn rate calculations |
 
+---
+
+### Dataset Preview
+
+![Product Usage Table Preview](product_usage_table_preview.png)
 
 ## Product Usage Table
 
@@ -104,7 +113,11 @@ Specific objectives include:
 | Key Columns | `subscription_id`, `feature_name`, `usage_count`, `usage_duration_seconds`, `is_beta_feature`, `error_count` |
 | Used For | Feature usage analysis, churn vs usage comparison, beta feature analysis, usage segmentation |
 
+---
 
+### Dataset Preview
+
+![Subscriptions Table Preview](subscriptions_table_preview.png)
 
 ## Subscriptions Table
 
@@ -117,6 +130,11 @@ Specific objectives include:
 | Key Columns | `subscription_id`, `account_id`, `plan_tier`, `mrr_amount`, `arr_amount`, `upgrade_flag`, `downgrade_flag`, `auto_renew_flag`, `churn_flag`, `end_date`, `subscription_status` |
 | Used For | MRR and ARR analysis, churn by plan tier, upgrade and downgrade analysis, active vs churned customer comparison |
 
+---
+
+### Dataset Preview
+
+![Support Tickets Table Preview](support_tickets_table_preview.png)
 
 ## Support Tickets Table
 
