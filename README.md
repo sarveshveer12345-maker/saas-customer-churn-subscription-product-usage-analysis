@@ -62,6 +62,10 @@ Specific objectives include:
 
 ---
 
+### Dataset Preview
+
+![Accounts Table Preview](dashboard_images/accounts_table_preview.png)
+
 ## Dataset Information
 
 ## Accounts Table
@@ -75,6 +79,7 @@ Specific objectives include:
 | Key Columns | `account_id`, `account_name`, `industry`, `country`, `referral_source` |
 | Used For | Churn rate by industry, ARR by country, referral source analysis, customer-level ticket analysis |
 
+---
 
 ## Customer Churn Table
 
