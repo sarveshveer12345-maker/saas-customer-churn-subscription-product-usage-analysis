@@ -92,7 +92,7 @@ Specific objectives include:
 - Customer Segmentation
 - KPI Development
 - Dashboard Design
-- Slicer Implementation
+- Interactive Navigation and Slicer Design
 - Storytelling with Data
 - Translating Business Problems into Data Questions
 - Converting Analysis into Business Recommendations
