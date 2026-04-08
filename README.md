@@ -64,7 +64,7 @@ Specific objectives include:
 
 ### Dataset Preview
 
-![Accounts Table Preview](dashboard_images/accounts_table_preview.png)
+![Accounts Table Preview](accounts_table_preview.png)
 
 ## Dataset Information
 
