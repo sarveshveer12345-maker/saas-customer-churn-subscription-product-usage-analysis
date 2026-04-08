@@ -62,6 +62,72 @@ Specific objectives include:
 
 ---
 
+## Dataset Information
+
+## Accounts Table
+
+| Attribute | Details |
+| --- | --- |
+| Table Name | `accounts` |
+| Description | Contains customer account details such as company name, industry, country, and acquisition source. |
+| Primary Key | `account_id` |
+| Foreign Keys | Referenced by `subscriptions.account_id`, `support_tickets.account_id`, and `customer_churn.account_id` |
+| Key Columns | `account_id`, `account_name`, `industry`, `country`, `referral_source` |
+| Used For | Churn rate by industry, ARR by country, referral source analysis, customer-level ticket analysis |
+
+
+## Customer Churn Table
+
+| Attribute | Details |
+| --- | --- |
+| Table Name | `customer_churn` |
+| Description | Contains churn-related information for customers who cancelled or ended their subscriptions. |
+| Primary Key | `account_id` |
+| Foreign Keys | `account_id` → `accounts.account_id` |
+| Key Columns | `account_id`, `reason_code`, `preceding_downgrade_flag` |
+| Used For | Churn reason analysis, downgrade-before-churn analysis, churn rate calculations |
+
+
+## Product Usage Table
+
+| Attribute | Details |
+| --- | --- |
+| Table Name | `product_usage` |
+| Description | Stores feature-level product usage data for each subscription, including usage duration, frequency, beta feature usage, and errors. |
+| Primary Key | No single unique key identified; analysis is performed at feature and subscription level |
+| Foreign Keys | `subscription_id` → `subscriptions.subscription_id` |
+| Key Columns | `subscription_id`, `feature_name`, `usage_count`, `usage_duration_seconds`, `is_beta_feature`, `error_count` |
+| Used For | Feature usage analysis, churn vs usage comparison, beta feature analysis, usage segmentation |
+
+
+
+## Subscriptions Table
+
+| Attribute | Details |
+| --- | --- |
+| Table Name | `subscriptions` |
+| Description | Contains subscription plan, revenue, upgrade, downgrade, renewal, and churn information for each customer subscription. |
+| Primary Key | `subscription_id` |
+| Foreign Keys | `account_id` → `accounts.account_id` |
+| Key Columns | `subscription_id`, `account_id`, `plan_tier`, `mrr_amount`, `arr_amount`, `upgrade_flag`, `downgrade_flag`, `auto_renew_flag`, `churn_flag`, `end_date`, `subscription_status` |
+| Used For | MRR and ARR analysis, churn by plan tier, upgrade and downgrade analysis, active vs churned customer comparison |
+
+
+## Support Tickets Table
+
+| Attribute | Details |
+| --- | --- |
+| Table Name | `support_tickets` |
+| Description | Contains support ticket activity, including ticket priority, escalation, satisfaction, and resolution time. |
+| Primary Key | `ticket_id` |
+| Foreign Keys | `account_id` → `accounts.account_id` |
+| Key Columns | `ticket_id`, `account_id`, `priority`, `satisfaction_score`, `resolution_time_hours`, `escalation_flag` |
+| Used For | Support performance analysis, ticket volume, escalation rate, satisfaction analysis, churn vs support relationship |
+
+
+
+---
+
 ## DAX Calculations
 
 - Total Customers = DISTINCTCOUNT(customer_accounts[account_id])
