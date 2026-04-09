@@ -579,19 +579,15 @@ saas-customer-churn-subscription-product-usage-analysis/
 ## Repository Structure
 
 - **data**
-  
-  Contains the raw and cleaned SaaS subscription, usage, support, and churn datasets.
+  - Contains the raw and cleaned SaaS subscription, usage, support, and churn datasets.
 
 - **sql**
-  
-  Includes SQL scripts for schema creation, data cleaning, KPI calculations, churn analysis, product usage analysis, support          analysis, and customer-level investigation.
+  - Includes SQL scripts for schema creation, data cleaning, KPI calculations, churn analysis, product usage analysis, support          analysis, and customer-level investigation.
 
 - **powerbi**
-  
-  Contains the Power BI dashboard file used to build the complete SaaS churn analysis dashboard.
+  - Contains the Power BI dashboard file used to build the complete SaaS churn analysis dashboard.
 
 - **dashboard_images**
-  
   Stores screenshots of all five dashboard pages:
   - Executive Overview
   - Product Usage & Engagement
@@ -600,16 +596,13 @@ saas-customer-churn-subscription-product-usage-analysis/
   - Customer Deep Dive
 
 -  **dataset_preview**
-
-   Contains preview screenshots of each source dataset table used in the project.
+   - Contains preview screenshots of each source dataset table used in the project.
 
 - **docs**
-  
-  Includes supporting project documentation such as business questions, KPI summaries, key insights, recommendations, and dashboard   explanations.
+  - Includes supporting project documentation such as business questions, KPI summaries, key insights, recommendations, and             dashboard explanations.
   
 - **README.md**
-  
-  Main project documentation containing project overview, objectives, dataset details, SQL analysis, dashboard previews, business     insights, and recommendations.
+ -  Main project documentation containing project overview, objectives, dataset details, SQL analysis, dashboard previews, business     insights, and recommendations.
 
 ---
 
