@@ -266,7 +266,7 @@ This query analyzed average ARR by acquisition source.
 **Business Insight:** Organic and partner channels attract customers with higher long-term value. Marketing investment should shift toward these sources rather than lower-performing channels.
 
 
-5. Which plan tier has the highest average MRR per customer?
+5. Which plan tier has the highest average monthly recurring revenue (MRR) per customer?
 
 This query compared average monthly recurring revenue per customer across plan tiers.
 
@@ -274,140 +274,215 @@ This query compared average monthly recurring revenue per customer across plan t
 
 **Business Insight:** Enterprise accounts not only generate the most total revenue, but also the highest revenue per customer. Losing a single Enterprise customer is far more damaging than losing multiple Basic customers.
 
-Customer Retention and Subscription Behavior
+
 6. How many customers upgraded vs downgraded?
 
-Key Finding:
+**Key Finding:**
+- 529 customers upgraded.
+- 218 customers downgraded.
 
-218 customers upgraded.
-529 customers downgraded.
+**Business Insight:** The number of upgraded customers is more than twice the number of downgraded customers, which suggests that many customers are finding enough value in the product to move to higher-tier plans. This is a strong sign of product-market fit and successful expansion within the existing customer base. The company should analyze what drives these upgrades—such as specific features, industries, or usage patterns—and use those insights to encourage more customers to move up.
 
-Business Insight: The number of downgrades is more than double the number of upgrades. This is a major warning sign that customers are not seeing enough value in higher-tier plans.
 
 7. Which plan has the highest upgrade rate?
 
-Business Insight: This query identified which subscription tier has the strongest upward movement. The result can be used to understand where customers see the most value and where conversion opportunities exist.
+
+**Key Finding:**
+
+- Pro: 11.58
+- Enterprise: 11.26
+- Basic: 8.80
+
+
+**Business Insight:** Pro customers have the highest upgrade rate, which suggests that customers on the Pro plan are most likely to see enough value to move to Enterprise. The Pro tier appears to be the strongest conversion stage in the subscription journey. The company should focus on identifying which features or usage patterns drive Pro customers to upgrade and use those signals in targeted upsell campaigns.
+
 
 8. What percentage of customers are on auto-renew?
 
-Key Finding: 80.1% of subscriptions are on auto-renew.
+ 
+**Key Finding:** 
+- 80.1% of subscriptions are on auto-renew.
 
-Business Insight: The business has a strong base of recurring subscriptions. However, auto-renew alone is not preventing churn, which means customers are cancelling despite being enrolled in recurring billing.
+
+**Business Insight:** The business has a strong base of recurring subscriptions. However, auto-renew alone is not preventing churn, which means customers are cancelling despite being enrolled in recurring billing.
+
 
 9. Which plan tier has the highest percentage of churned customers?
 
-Key Finding:
 
-Enterprise: 34.25%
-Pro: 33.19%
-Basic: 32.56%
+**Key Finding:**
 
-Business Insight: Enterprise customers account for the highest share of churn, which is especially concerning because they also generate the highest revenue.
+- Enterprise: 9.98%
+- Pro: 9.67%
+- Basic: 9.49%
+
+
+**Business Insight:** Enterprise customers have the highest churn rate, even though the difference across plans is relatively small. Since Enterprise customers generate the most revenue, even a slightly higher churn rate in this segment creates a disproportionate financial impact. The company should prioritize retention strategies for Enterprise accounts, especially by addressing the support issues and feature gaps that appear to drive churn in higher-value customers.
+
 
 10. Which customers have multiple subscriptions?
+    
+    
+**Key Finding:** Several accounts maintain a very large number of subscriptions. 
 
-Business Insight: Customers with multiple subscriptions are likely to be the most valuable accounts. These accounts should be tracked separately and prioritized for retention because they contribute more recurring revenue than average customers.
 
-Product Usage Analysis
+**Business Insight:** Customers with multiple subscriptions are likely to be the company’s most valuable and highest-revenue accounts. These accounts are deeply embedded in the product, but they also create concentrated revenue risk because losing a single account could mean losing many subscriptions at once. The company should treat these accounts as strategic customers by giving them dedicated account management, proactive support, and retention monitoring.
+
+
+
 11. Which features are used the most?
 
-Key Finding: The most-used features were feature_32, feature_15, feature_6, and feature_20, each with more than 6.5K uses.
 
-Business Insight: These features drive the majority of product engagement and should receive the highest development and support priority.
+**Key Finding:** The most-used features are feature_32 & feature_15 each with more than 6.6K uses.
+
+
+**Business Insight:** These features drive the majority of customer engagement and appear to be the core value of the product. The company should prioritize improving, stabilizing, and promoting these features because any issues or poor experience in them would affect a large portion of customers. These features drive the majority of product engagement and should receive the highest development and support priority.
+
 
 12. Which features are most used by Enterprise customers?
 
-Key Finding: Enterprise customers relied most heavily on feature_10, feature_2, feature_39, and feature_6.
 
-Business Insight: Enterprise customers depend on a different set of features than the average customer. Improving these features would likely have the greatest impact on Enterprise retention.
+**Key Finding:** Enterprise customers relied most heavily on feature_10, feature_2 and feature_39.
+
+
+**Business Insight:** Enterprise customers depend on a different set of features than the average customer. Improving these features would likely have the greatest impact on Enterprise retention.
+
 
 13. Do churned customers use the product less than active customers?
 
-Key Finding: Churned customers had lower average usage duration and lower average feature usage than active customers.
 
-Business Insight: Low engagement is strongly linked to churn. Declining product usage should be treated as an early warning sign that a customer is at risk.
+**Key Finding:**
+- Active customers averaged 3042.58 seconds of usage and 10.02 avg usage count.
+- Churned customers averaged 3038.64 seconds of usage and 10.03 avg usage count.
+
+**Product usage was nearly identical between churned and active customers.**
+
+**Business Insight:** Product usage alone is not a meaningful predictor of churn in this dataset. Customers are leaving despite using the product at roughly the same level as active customers. This suggests churn is being driven more by factors such as poor support, missing features, pricing concerns, or failed renewals rather than simple lack of engagement.
+
 
 14. Which beta features have the highest error count?
+    
 
-Key Finding: Feature_38, feature_18, and feature_28 had the highest beta feature error counts.
+**Key Finding:** Feature_38 with 56 error counts, feature_18 with 51 error counts, and feature_28 with 48 error counts has the highest beta feature error counts.
 
-Business Insight: The company is exposing customers to unstable beta features that may be damaging customer satisfaction and trust.
+
+**Business Insight:** The company is exposing customers to unstable beta features that may be damaging customer satisfaction and trust.
+
 
 15. Does lower usage duration lead to churn?
 
-Key Finding: Customers in the low-usage segment had the highest churn rate, while high-usage customers had the lowest churn rate.
 
-Business Insight: Product engagement is one of the strongest predictors of retention. Customers who stop using the platform are far more likely to leave.
+**Key Finding:** Customers in the low-usage segment has the highest churn rate, while high-usage customers has the lower churn rate.
 
-Support and Customer Experience Analysis
+
+**Business Insight:** Product engagement is one of the strongest predictors of retention. Customers who stop using the platform are far more likely to leave.
+
+
+
 16. Which customers raise the most tickets?
 
-Key Finding: Company_340, Company_256, and Company_169 generated the highest number of support tickets.
 
-Business Insight: A small number of customers create a disproportionately large support burden. These customers should be considered high-risk accounts rather than routine support cases.
+**Key Finding:** Company_340 and Company_256 generated the highest number of support tickets.
+
+
+**Business Insight:** Customers such as Company_340 and Company_256 require significantly more support than the average account. High ticket volume often indicates either complex product usage or recurring customer pain points. These accounts should be monitored closely because they are more likely to become dissatisfied or churn if their issues are not resolved quickly.
+
 
 17. Does long ticket resolution time increase churn?
 
-Key Finding: Customers with support tickets resolved after more than 72 hours experienced the highest churn rate.
+**Key Finding:**
+- Customers whose tickets were resolved within 0–24 hours still had a churn rate of 80.75%.
+- Customers with 25–72 hour resolution times had a slightly lower churn rate of 79.24%.
+  
+There was no meaningful increase in churn as resolution time increased in this dataset.
 
-Business Insight: Long resolution times directly increase churn risk. Customers are far less likely to stay when problems remain unresolved for several days.
+**Business Insight:** Faster ticket resolution does not appear to reduce churn on its own. Since churn remains extremely high even when issues are resolved quickly, the real problem is likely the nature of the issue rather than the speed of the response. Customers may be leaving because their underlying needs are not being solved—such as missing features, product limitations, or repeated recurring problems.
+
 
 18. Which ticket priority has the lowest satisfaction score?
 
-Key Finding: Medium-priority tickets had the lowest average satisfaction score.
 
-Business Insight: The support team may be focusing too heavily on urgent issues while neglecting medium-priority cases, creating frustration that eventually contributes to churn.
+**Key Finding:** Medium-priority tickets had the lowest average satisfaction score with 3.93.
+
+
+**Business Insight:** The support team may be focusing too heavily on urgent issues while neglecting medium-priority cases, creating frustration that eventually contributes to churn.
+
 
 19. Which industries create the most support load?
 
-Key Finding:
 
-FinTech generated 457 support tickets.
-DevTools generated 425.
-HealthTech generated 408.
+**Key Finding:**
+- FinTech generated 457 support tickets.
+- DevTools generated 425 support tickets.
+- HealthTech generated 408 support tickets.
 
-Business Insight: The same industries with the highest support load are also among the industries with the highest churn. This suggests support problems are closely linked to customer loss.
+
+**Business Insight:** FinTech, DevTools, and HealthTech create the highest support burden, which suggests customers in these industries face more product complexity, onboarding challenges, or unresolved issues than other segments. Since DevTools also has one of the highest churn rates, heavy support demand may be contributing directly to customer loss. These industries should receive targeted product improvements, stronger onboarding, and dedicated customer success resources.
+
 
 20. Are escalated tickets more common among churned customers?
 
-Key Finding:
 
-Churned customers: 5.09% escalated ticket rate
-Active customers: 3.97% escalated ticket rate
+**Key Finding:**
+- Churned customers: 5.09% escalated ticket rate
+- Active customers: 3.97% escalated ticket rate
 
-Business Insight: Customers who escalate support issues are significantly more likely to churn. Escalated tickets should trigger immediate follow-up from the customer success team.
 
-Churn Driver Analysis
+**Business Insight:** Customers who escalate support issues are significantly more likely to churn. Escalated tickets should trigger immediate follow-up from the customer success team.
+
+
 21. What are the top churn reasons?
 
-Key Finding:
 
-Feature limitations: 114 customers
-Budget concerns: 104 customers
-Support issues: 104 customers
-Unknown: 95 customers
-Competitor: 92 customers
-Pricing: 91 customers
+**Key Finding:**
+- Features: 114 customers
+- Budget: 104 customers
+- Support: 104 customers
+- Unknown: 95 customers
+- Competitor: 92 customers
+- Pricing: 91 customers
 
-Business Insight: The main reason customers leave is not price. Customers are leaving because the product lacks important features and because the support experience is weak.
+
+**Business Insight:** The main reason customers leave is not price. Customers are leaving because the product lacks important features and because the support experience is weak.
+
 
 22. Which plan tier has the highest average number of support tickets among churned customers?
 
-Business Insight: This query identifies which plan tier experiences the most support friction before churn. Higher support ticket volume before cancellation indicates where the customer experience is breaking down.
+
+**Key Finding:**
+- Pro churned customers generated the highest average number of support tickets at 4.87 tickets per customer.
+- Enterprise churned customers followed closely at 4.81 tickets.
+- Basic churned customers averaged 4.47 tickets.
+
+
+**Business Insight:** Customers on the Pro and Enterprise plans interact with support more frequently before churning, suggesting that unresolved issues or repeated friction may be contributing to customer loss. Since these plans also represent higher-value customers, the company should closely monitor customers with rising ticket volume and intervene before they cancel.
+
 
 23. Did customers usually downgrade before churn?
 
-Key Finding: 91.2% of churned customers downgraded before leaving.
 
-Business Insight: Downgrading is the strongest warning sign in the entire dataset. Customers rarely churn suddenly. Most customers first reduce their subscription before cancelling completely.
+**Key Finding:**
+- 547 churned customers did not downgrade before leaving.
+- Only 53 customers downgraded before churning.
+
+
+**Business Insight:** Most customers churned directly without first moving to a lower-tier plan. This means downgrades are not a strong early warning signal in this dataset. Instead, the company should focus on other indicators such as rising support tickets, poor satisfaction scores, feature complaints, and repeated escalations to identify customers at risk of churn.
+
 
 24. Which accounts churned after receiving poor support?
 
-Business Insight: This query identified specific accounts with low satisfaction scores and long resolution times before churn. These accounts provide direct evidence that poor support contributed to customer loss.
+**Business Insight:** This query identified specific accounts with low satisfaction scores and long resolution times before churn. These accounts provide direct evidence that poor support contributed to customer loss.
+
 
 25. Which churn reasons are most common for each plan tier?
 
-Business Insight: Different plan tiers churn for different reasons. Enterprise customers are more likely to churn because of missing features or support issues, while lower-tier customers may be more price-sensitive.
+**Business Insight:**
+- Basic customers leave mainly because of budget and support issues, suggesting that lower-tier customers are highly price-sensitive and expect simpler, faster support.
+  
+- Pro customers churn primarily because of missing features and support issues, which indicates they are outgrowing the plan and may not be finding the advanced functionality they need.
+  
+- Enterprise customers most often leave because of support and budget issues, which is especially serious because these customers generate the highest revenue.
+
 
 ---
 
