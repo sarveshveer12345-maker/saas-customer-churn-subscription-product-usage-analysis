@@ -545,3 +545,111 @@ Specific objectives include:
 8. Added slicers, page navigation buttons, and a customer deep-dive page for interactive analysis.
   
 9. Converted the final findings into business insights and recommendations.
+
+---
+
+## Project Structure
+
+saas-customer-churn-subscription-product-usage-analysis/
+│
+├── README.md
+│
+├── data/
+│   ├── accounts.xlsx
+│   ├── subscriptions.xlsx
+│   ├── product_usage.xlsx
+│   ├── support_tickets.xlsx
+│   └── customer_churn.xlsx
+│
+├── sql/
+│   └── saas_customer_churn_business_analysis.sql
+│
+├── powerbi/
+│   ├── saas-customer-churn-subscription-product-usage-analysis.pbix
+│
+├── dashboard_images/
+│   ├── dashboard_executive_overview.png
+│   ├── dashboard_product_usage_engagement.png
+│   ├── dashboard_support_customer_experience.png
+│   ├── dashboard_customer_churn_analysis.png
+│   └── dashboard_customer_deep_dive.png
+
+---
+
+## Repository Structure
+
+- data
+  Contains the raw and cleaned SaaS subscription, usage, support, and churn datasets.
+
+- sql
+  Includes SQL scripts for schema creation, data cleaning, KPI calculations, churn analysis, product usage analysis, support          analysis, and customer-level investigation.
+
+- powerbi
+  Contains the Power BI dashboard file used to build the complete SaaS churn analysis dashboard.
+
+- dashboard_images
+  Stores screenshots of all five dashboard pages:
+  - Executive Overview
+  - Product Usage & Engagement
+  - Support & Customer Experience
+  - Customer Churn Analysis
+  - Customer Deep Dive
+
+-  dataset_preview
+   Contains preview screenshots of each source dataset table used in the project.
+
+- docs
+  Includes supporting project documentation such as business questions, KPI summaries, key insights, recommendations, and dashboard   explanations.
+  
+- README.md
+  Main project documentation containing project overview, objectives, dataset details, SQL analysis, dashboard previews, business     insights, and recommendations.
+
+---
+
+## How to Use
+
+1. Download the five source datasets from the `data/` folder:
+   - `accounts.xlsx`
+   - `subscriptions.xlsx`
+   - `feature_usage.xlsx`
+   - `support_tickets.xlsx`
+   - `churn_events.xlsx`
+
+2. Import the datasets into your SQL environment and create relationships using `account_id`.
+
+3. Run the SQL queries from `sql/saas_customer_churn_analysis.sql` to calculate KPIs, analyze churn, investigate support issues, evaluate product usage, and identify customer retention risks.
+
+4. Open `powerbi/saas_customer_churn_analysis_dashboard.pbix` in Power BI Desktop.
+
+5. Explore the five dashboard pages:
+   - Executive Overview
+   - Product Usage & Engagement
+   - Support & Customer Experience
+   - Customer Churn Analysis
+   - Customer Deep Dive
+
+6. Use the slicers for country, industry, plan tier, year, and account name to analyze different customer segments and churn scenarios.
+
+7. Use the Customer Deep Dive page to investigate specific accounts, review support history, monitor product usage trends, and identify high-risk customers before they churn.
+
+---
+
+## Conclusion
+
+The analysis reveals that the business is facing a severe customer retention problem, with a churn rate of 70.4% and 352 out of 500 customers leaving.
+
+The biggest drivers of churn are not pricing alone. Customers are primarily leaving because of feature limitations, poor support experience, repeated downgrades, and unresolved product issues. More than 91% of churned customers downgraded before leaving, making downgrades one of the strongest early warning signs of churn.
+
+The dashboard also shows that Enterprise customers generate the majority of revenue, contributing $8.47M of the total $11.34M MRR. However, these high-value customers are also churning at the highest rate, creating significant revenue risk.
+
+Support performance is another major issue. Churned customers experience higher escalation rates and long resolution times, indicating that weak customer support is directly contributing to lost customers.
+
+This project demonstrates how combining SQL, Power BI, customer usage data, support data, and churn behavior can help identify the real reasons customers leave and support more effective retention strategies.
+
+--
+
+## Author
+
+**Sarvesh Vernekar**
+
+Aspiring Business/Data Analyst with experience in SQL, Power BI, Excel, and business storytelling. Focused on transforming raw business data into actionable insights through KPI analysis, customer behavior analysis, churn prediction, and data-driven decision-making.
