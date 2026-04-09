@@ -413,7 +413,6 @@ Business Insight: Different plan tiers churn for different reasons. Enterprise c
 
 ## Executive Overview Dashboard
 
-![Executive Overview Dashboard](dashboard_executive_overview.png)
 
 
 ## Executive Overview
