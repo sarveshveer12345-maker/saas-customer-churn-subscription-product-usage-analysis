@@ -202,33 +202,274 @@ Specific objectives include:
 
 ---
 
-### Executive Overview Dashboard
+## Executive Overview Dashboard
 
 ![Executive Overview Dashboard](dashboard_executive_overview.png)
 
+
+## Executive Overview
+
+### Key Performance Indicators (KPIs)
+
+-	Total Customers: 500
+-	Total ARR: $136.06M
+-	Total MRR: $11.34M
+-	Churn Rate: 70.4%
+-	Auto Renew Rate: 80.1%
+-	Upgrade Rate: 10.6%
+
+  
+### Dashboard Features
+
+-	KPI cards for customer count, ARR, MRR, churn rate, auto-renew rate, and upgrade rate
+-	MRR contribution by plan tier
+-	ARR distribution by country
+-	Average ARR by acquisition source
+-	Upgrade vs downgrade customer distribution
+-	Churn percentage by plan tier
+-	Interactive slicers for country, industry, and plan tier
+
+  
+### Business Questions
+
+1.	Which subscription plan generates the highest recurring revenue?
+2.	Which countries contribute the most ARR?
+3.	Which acquisition channels bring the highest-value customers?
+4.	Are more customers upgrading or downgrading?
+5.	Which plan tiers experience the highest churn?
+
+   
+### Key Insights
+
+-	Enterprise customers generate the majority of recurring revenue with $8.47M MRR, accounting for nearly 75% of total MRR. Pro customers contribute $2.11M, while Basic customers contribute only $0.76M.
+-	The United States is the dominant revenue market, generating $79.62M ARR, which is more than 58% of total ARR. The UK and India are the next largest markets with $14.65M and $14.33M respectively.
+-	Organic and partner acquisition channels bring the highest-value customers, with average ARR per customer of $28.7K and $28.4K. Event-based acquisition performs worst at $25.1K.
+-	The customer base is heavily skewed toward downgrades rather than upgrades. 70.82% of customers downgraded their subscription, while only 29.18% upgraded.
+-	Churn is distributed almost equally across plan tiers, but Enterprise has the highest churn share at 34.25%, followed closely by Pro at 33.19% and Basic at 32.56%. This is dangerous because the highest-value customers are also leaving at the highest rate.
+
+  
+### Business Recommendations
+
+-	Prioritize retention programs for Enterprise customers immediately. Losing even a small number of Enterprise accounts has a much larger revenue impact than losing many Basic accounts.
+-	Double down on organic and partner acquisition channels because they attract customers with stronger long-term revenue potential.
+-	Investigate why downgrades are significantly higher than upgrades. That usually indicates customers are not seeing enough value to justify premium plans.
+-	Create targeted save offers for Enterprise and Pro customers before renewal periods, including account reviews, onboarding support, and feature training.
+-	Reduce dependence on low-performing acquisition channels such as events and ads unless their conversion quality improves.
+
 --- 
 
-### Product Usage & Engagement Dashboard
+## Product Usage & Engagement Dashboard
 
 ![Product Usage & Engagement Dashboard](dashboard_product_usage_engagement.png)
 
+
+## Product Usage & Engagement
+
+### Key Performance Indicators (KPIs)
+
+-	Total Feature Usage: 251K
+-	Average Usage Duration: 3.04K seconds
+-	Average Usage Count per Customer: 50.44
+-	Beta Feature Error Count: 1,416
+
+
+### Dashboard Features
+
+-	Feature usage KPI cards
+-	Top 10 most-used product features
+-	Most-used features by Enterprise customers
+-	Beta vs non-beta feature usage split
+-	Monthly product usage trend
+-	Beta features with the highest error counts
+-	Year slicer for 2023 and 2024 comparison
+
+  
+### Business Questions
+
+1.	Which product features drive the highest engagement?
+2.	What features are most important to Enterprise customers?
+3.	How much of total usage comes from beta features?
+4.	Are beta features creating product quality issues?
+5.	How does overall product usage change month by month?
+
+
+### Key Insights
+
+-	Total product engagement is high, with 251K feature interactions and an average of 50.44 uses per customer.
+-	Non-beta features account for 89.79% of all usage, while beta features contribute only 10.21%. Customers clearly rely on stable, proven functionality rather than experimental features.
+-	The most-used features overall are feature_32, feature_15, feature_6, and feature_20, each with more than 6.5K interactions.
+-	Enterprise customers show a different behavior pattern. Their most-used features are feature_10, feature_2, feature_39, and feature_6, meaning Enterprise customers depend heavily on a narrower set of advanced capabilities.
+-	Product usage is relatively stable across the year, ranging from 19.5K to 22.4K interactions per month. March is the strongest month at 22.42K, while April is the weakest at 19.51K.
+-	Beta features are generating substantial friction. Feature_38, feature_18, and feature_28 have the highest error counts, with up to 56 errors each.
+
+
+### Business Recommendations
+
+-	Focus future product development on the most-used features because they drive the majority of customer value and engagement.
+-	Protect Enterprise customer retention by improving the advanced features they use most frequently.
+-	Stop treating beta features as harmless experiments. The error-heavy beta features should either be fixed quickly or removed before they damage customer trust.
+-	Use March’s higher engagement levels as a benchmark to identify what campaigns, releases, or customer activity drove stronger usage.
+-	Build customer education and onboarding around the most valuable features to increase adoption and reduce downgrade risk.
+
 ---
 
-### Support & Customer Experience Dashboard
+## Support & Customer Experience Dashboard
 
 ![Support & Customer Experience Dashboard](dashboard_support_customer_experience.png)
 
+
+## Support & Customer Experience
+
+### Key Performance Indicators (KPIs)
+
+-	Total Support Tickets: 2,000
+-	Average Resolution Time: 35.86 hours
+-	Average Satisfaction Score: 3.98 / 5
+-	Escalated Ticket Percentage: 4.75%
+
+  
+### Dashboard Features
+
+-	KPI cards for support ticket volume, resolution time, satisfaction score, and escalated ticket percentage
+-	Top customers by support ticket volume
+-	Escalated ticket rate by churn status
+-	Satisfaction score by ticket priority
+-	Support ticket volume by industry
+-	Interactive slicers for priority, industry, escalation flag, and country
+
+  
+### Business Questions
+
+1.	Which customers generate the highest support demand?
+2.	Are churned customers more likely to escalate support issues?
+3.	Does ticket priority affect customer satisfaction?
+4.	Which industries create the most support workload?
+5.	Is support quality contributing to churn?
+
+   
+### Key Insights
+
+-	The business handled 2,000 support tickets with an average resolution time of 35.86 hours. That is not catastrophic, but it is slow enough to create frustration, especially for high-value accounts.
+-	Churned customers have a higher escalated ticket rate of 5.09%, compared with only 3.97% for active customers. This strongly suggests that unresolved support issues are directly connected to churn.
+-	Satisfaction scores are fairly consistent across ticket priorities, ranging from 3.93 to 4.02. However, even the highest score is not impressive. Customers are satisfied enough not to complain loudly, but not satisfied enough to become loyal.
+-	FinTech and DevTools customers create the highest support burden, with 457 and 425 tickets respectively.
+-	A small number of accounts generate a disproportionate number of tickets. Company_340, Company_256, and Company_169 each submitted 9 to 11 tickets. Those accounts should be treated as at-risk customers rather than normal support cases.
+
+  
+### Business Recommendations
+
+-	Reduce average resolution time, especially for Enterprise and high-value customers. Waiting more than 35 hours for issue resolution is too slow in a SaaS business.
+-	Create an early-warning system for customers with repeated tickets or multiple escalations. These are usually the customers most likely to churn next.
+-	Prioritize support resources toward FinTech and DevTools because those industries generate the largest ticket volumes.
+-	Review the accounts with unusually high ticket counts and assign dedicated customer success outreach before they leave.
+-	Improve escalation handling processes. If escalated tickets continue to correlate with churn, the business is not just failing in support—it is actively creating churn.
+
 ---
 
-### Customer Churn Analysis Dashboard
+## Customer Churn Analysis Dashboard
 
 ![Customer Churn Analysis Dashboard](dashboard_customer_churn_analysis.png)
 
+
+## Customer Churn Analysis
+
+### Key Performance Indicators (KPIs)
+
+-	Total Churned Customers: 352
+-	Churn Rate: 70.4%
+-	Average Resolution Time for Churned Customers: 35.74 hours
+-	Escalated Ticket Percentage for Churned Customers: 5.09%
+
+
+### Dashboard Features
+
+- KPI cards for churn metrics
+-	Churned customers by industry
+-	Top churn reasons
+-	Customers who downgraded before churning
+-	Monthly churn trend
+-	Interactive slicers for reason code, country, year, and industry
+
+
+### Business Questions
+
+1.	Which industries have the highest number of churned customers?
+2.	What are the biggest reasons customers leave?
+3.	Do customers usually downgrade before churning?
+4.	Which months have the highest churn?
+5.	Is support performance contributing to churn?
+
+
+### Key Insights
+
+-	352 out of 500 customers churned, resulting in an extremely high churn rate of 70.4%. That is not a minor performance issue. It indicates a fundamental product, pricing, or customer success problem.
+-	DevTools customers have the highest churn volume with 83 churned customers, followed by FinTech with 76 and Cybersecurity with 72.
+-	The leading churn reasons are feature limitations (114 customers), budget concerns (104), poor support (104), unknown reasons (95), competitor pressure (92), and pricing issues (91).
+-	Feature-related and support-related churn together account for more than 200 lost customers. That means the company is not losing customers mainly because of price—it is losing them because customers do not believe the product delivers enough value.
+-	91.2% of churned customers downgraded before leaving. This is one of the strongest warning signs in the entire dashboard. Downgrading is not an isolated event; it is the final stage before churn.
+-	Churn spikes sharply in February with 133 churned customers, followed by October with 79 and July with 76. February should be treated as a critical churn-risk period.
+
+
+### Business Recommendations
+
+-	Treat customer downgrades as an immediate churn warning signal. Any customer who downgrades should automatically trigger proactive outreach from customer success.
+-	Improve the product areas tied to feature-related churn. Customers are telling the company directly that the product is missing critical functionality.
+-	Fix the support experience because poor support is one of the top reasons customers leave.
+-	Run detailed retention campaigns before February and October because those months have the highest churn risk.
+-	Stop accepting ‘unknown’ churn reasons. Require structured exit feedback from every churned customer so the business can identify the real drivers of churn.
+
 ---
 
-### Customer Deep Dive Dashboard
+## Customer Deep Dive Dashboard
 
 ![Customer Deep Dive Dashboard](dashboard_customer_deep_dive.png)
+
+
+## Customer Deep Dive
+
+### Key Performance Indicators (KPIs)
+
+-	Active Subscriptions: 4,514
+-	Total Feature Usage: 251K
+-	Total Support Tickets: 2,000
+-	Selected Customer ARR and MRR metrics available through account slicer
+
+
+### Dashboard Features
+
+-	Dynamic customer-level ARR and MRR cards
+-	Customer profile table including industry, country, plan tier, ARR, and MRR
+-	Ticket history table with year, priority, resolution time, satisfaction score, and escalation flag
+-	Customer product usage trend over time
+-	Interactive slicers for country, industry, and account name
+-	Drill-through functionality to investigate individual customers in detail
+
+
+### Business Questions
+
+1.	Which individual customers contribute the highest ARR and MRR?
+2.	What patterns exist in support history for high-risk customers?
+3.	How does customer product usage change over time?
+4.	Which accounts have repeated escalations or poor support experiences?
+5.	Which customers should be targeted first for retention efforts?
+
+
+### Key Insights
+
+-	The Customer Deep Dive page transforms the dashboard from high-level reporting into a practical retention tool. Instead of only showing that churn exists, it identifies exactly which customers are most at risk.
+-	High-value accounts such as Company_108, Company_11, and Company_107 contribute some of the highest ARR and MRR values. Losing only a few of these accounts would significantly reduce revenue.
+-	The ticket history table shows several cases with extremely high resolution times and low satisfaction, particularly among escalated tickets. Those customers should be considered immediate churn risks.
+-	Repeated support tickets, multiple escalations, and declining product usage are clear leading indicators of future churn.
+-	The ability to filter by country, industry, and account name makes it possible to identify whether churn risk is concentrated in a specific segment or a specific customer.
+
+
+### Business Recommendations
+
+-	Use this page as the main operational dashboard for customer success teams.
+-	Create a churn-risk score based on support escalations, declining usage, downgrades, and low satisfaction.
+-	Prioritize outreach to the highest-value customers with repeated support issues or declining engagement.
+-	Build automated alerts in Power BI for customers whose usage drops sharply or whose ticket volume suddenly increases.
+-	Assign dedicated account managers to high-MRR customers so that potential churn risks are addressed before renewal periods.
 
 ---
 
