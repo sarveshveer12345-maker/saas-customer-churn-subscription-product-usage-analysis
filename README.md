@@ -209,7 +209,7 @@ The SQL analysis was performed using five related datasets: accounts, subscripti
 The analysis focused on identifying which customers generate the most value, which customers are most likely to churn, and what business factors are driving that churn.
 
 
-1. Which plan tier generates the highest total MRR?
+### 1. Which plan tier generates the highest total MRR?
 
 This query measures which subscription plan contributes the most recurring revenue.
 
@@ -224,7 +224,7 @@ This query measures which subscription plan contributes the most recurring reven
 **Business Insight:** Enterprise customers are the core revenue driver, contributing most to the total monthly recurring revenue. Retaining these customers should be the top business priority because even a small increase in Enterprise churn would have a major revenue impact.
 
 ---
-2. Which industries have the highest churn rate?
+### 2. Which industries have the highest churn rate?
 
 This query compared churn rate in each industry.
 
@@ -239,7 +239,7 @@ This query compared churn rate in each industry.
 **Business Insight:** DevTools, EdTech, and Cybersecurity have the highest churn rates, which means these industries are losing a larger percentage of customers than any other segment. This suggests the product may not be meeting the specific needs of these industries. These segments should be prioritized for deeper investigation, targeted retention campaigns, feature improvements, and dedicated customer success support.
 
 ---
-3. Which countries bring the most ARR?
+### 3. Which countries bring the most ARR?
 
 This query measured annual recurring revenue by customer country.
 
@@ -253,7 +253,7 @@ This query measured annual recurring revenue by customer country.
 **Business Insight:** The business is heavily dependent on the United States market, which contributes more than half of total ARR. This concentration increases risk and suggests the company should diversify growth into other regions.
 
 ---
-4. Which referral sources generate the highest-value customers?
+### 4. Which referral sources generate the highest-value customers?
 
 This query analyzed average ARR by acquisition source.
 
@@ -266,7 +266,7 @@ This query analyzed average ARR by acquisition source.
 **Business Insight:** Organic and partner channels attract customers with higher long-term value. Marketing investment should shift toward these sources rather than lower-performing channels.
 
 ---
-5. Which plan tier has the highest average monthly recurring revenue (MRR) per customer?
+### 5. Which plan tier has the highest average monthly recurring revenue (MRR) per customer?
 
 This query compared average monthly recurring revenue per customer across plan tiers.
 
@@ -275,7 +275,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** Enterprise accounts not only generate the most total revenue, but also the highest revenue per customer. Losing a single Enterprise customer is far more damaging than losing multiple Basic customers.
 
 ---
-6. How many customers upgraded vs downgraded?
+### 6. How many customers upgraded vs downgraded?
 
 **Key Finding:**
 - 529 customers upgraded.
@@ -284,7 +284,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** The number of upgraded customers is more than twice the number of downgraded customers, which suggests that many customers are finding enough value in the product to move to higher-tier plans. This is a strong sign of product-market fit and successful expansion within the existing customer base. The company should analyze what drives these upgrades—such as specific features, industries, or usage patterns—and use those insights to encourage more customers to move up.
 
 ---
-7. Which plan has the highest upgrade rate?
+### 7. Which plan has the highest upgrade rate?
 
 
 **Key Finding:**
@@ -297,7 +297,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** Pro customers have the highest upgrade rate, which suggests that customers on the Pro plan are most likely to see enough value to move to Enterprise. The Pro tier appears to be the strongest conversion stage in the subscription journey. The company should focus on identifying which features or usage patterns drive Pro customers to upgrade and use those signals in targeted upsell campaigns.
 
 ---
-8. What percentage of customers are on auto-renew?
+### 8. What percentage of customers are on auto-renew?
 
  
 **Key Finding:** 
@@ -307,7 +307,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** The business has a strong base of recurring subscriptions. However, auto-renew alone is not preventing churn, which means customers are cancelling despite being enrolled in recurring billing.
 
 ---
-9. Which plan tier has the highest percentage of churned customers?
+### 9. Which plan tier has the highest percentage of churned customers?
 
 
 **Key Finding:**
@@ -320,7 +320,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** Enterprise customers have the highest churn rate, even though the difference across plans is relatively small. Since Enterprise customers generate the most revenue, even a slightly higher churn rate in this segment creates a disproportionate financial impact. The company should prioritize retention strategies for Enterprise accounts, especially by addressing the support issues and feature gaps that appear to drive churn in higher-value customers.
 
 ---
-10. Which customers have multiple subscriptions?
+### 10. Which customers have multiple subscriptions?
     
     
 **Key Finding:** Several accounts maintain a very large number of subscriptions. 
@@ -330,7 +330,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-11. Which features are used the most?
+### 11. Which features are used the most?
 
 
 **Key Finding:** The most-used features are feature_32 & feature_15 each with more than 6.6K uses.
@@ -339,7 +339,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** These features drive the majority of customer engagement and appear to be the core value of the product. The company should prioritize improving, stabilizing, and promoting these features because any issues or poor experience in them would affect a large portion of customers. These features drive the majority of product engagement and should receive the highest development and support priority.
 
 ---
-12. Which features are most used by Enterprise customers?
+### 12. Which features are most used by Enterprise customers?
 
 
 **Key Finding:** Enterprise customers relied most heavily on feature_10, feature_2 and feature_39.
@@ -349,7 +349,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-13. Do churned customers use the product less than active customers?
+### 13. Do churned customers use the product less than active customers?
 
 
 **Key Finding:**
@@ -362,7 +362,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-14. Which beta features have the highest error count?
+### 14. Which beta features have the highest error count?
     
 
 **Key Finding:** Feature_38 with 56 error counts, feature_18 with 51 error counts, and feature_28 with 48 error counts has the highest beta feature error counts.
@@ -372,7 +372,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-15. Does lower usage duration lead to churn?
+### 15. Does lower usage duration lead to churn?
 
 
 **Key Finding:** Customers in the low-usage segment has the highest churn rate, while high-usage customers has the lower churn rate.
@@ -382,7 +382,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-16. Which customers raise the most tickets?
+### 16. Which customers raise the most tickets?
 
 
 **Key Finding:** Company_340 and Company_256 generated the highest number of support tickets.
@@ -392,7 +392,7 @@ This query compared average monthly recurring revenue per customer across plan t
 
 
 ---
-17. Does long ticket resolution time increase churn?
+### 17. Does long ticket resolution time increase churn?
 
 **Key Finding:**
 - Customers whose tickets were resolved within 0–24 hours still had a churn rate of 80.75%.
@@ -404,7 +404,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-18. Which ticket priority has the lowest satisfaction score?
+### 18. Which ticket priority has the lowest satisfaction score?
 
 
 **Key Finding:** Medium-priority tickets had the lowest average satisfaction score with 3.93.
@@ -414,7 +414,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-19. Which industries create the most support load?
+### 19. Which industries create the most support load?
 
 
 **Key Finding:**
@@ -427,7 +427,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-20. Are escalated tickets more common among churned customers?
+### 20. Are escalated tickets more common among churned customers?
 
 
 **Key Finding:**
@@ -439,7 +439,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-21. What are the top churn reasons?
+### 21. What are the top churn reasons?
 
 
 **Key Finding:**
@@ -455,7 +455,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-22. Which plan tier has the highest average number of support tickets among churned customers?
+### 22. Which plan tier has the highest average number of support tickets among churned customers?
 
 
 **Key Finding:**
@@ -468,7 +468,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-23. Did customers usually downgrade before churn?
+### 23. Did customers usually downgrade before churn?
 
 
 **Key Finding:**
@@ -480,13 +480,13 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 
 ---
-24. Which accounts churned after receiving poor support?
+### 24. Which accounts churned after receiving poor support?
 
 **Business Insight:** This query identified specific accounts with low satisfaction scores and long resolution times before churn. These accounts provide direct evidence that poor support contributed to customer loss.
 
 
 ---
-25. Which churn reasons are most common for each plan tier?
+### 25. Which churn reasons are most common for each plan tier?
 
 **Business Insight:**
 - Basic customers leave mainly because of budget and support issues, suggesting that lower-tier customers are highly price-sensitive and expect simpler, faster support.
