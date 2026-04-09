@@ -208,61 +208,71 @@ The SQL analysis was performed using five related datasets: accounts, subscripti
 
 The analysis focused on identifying which customers generate the most value, which customers are most likely to churn, and what business factors are driving that churn.
 
-Key Performance Indicator Queries
+
 1. Which plan tier generates the highest total MRR?
 
 This query measures which subscription plan contributes the most recurring revenue.
 
-Key Finding:
 
-Enterprise generated the highest total MRR at approximately $8.47M.
-Pro contributed around $2.11M.
-Basic contributed only $0.76M.
+**Key Finding:**
 
-Business Insight: Enterprise customers are the core revenue driver, contributing nearly 75% of total monthly recurring revenue. Retaining these customers should be the top business priority because even a small increase in Enterprise churn would have a major revenue impact.
+- Enterprise generated the highest total MRR at approximately $8.47M.
+- Pro contributed around $2.11M.
+- Basic contributed only $0.76M.
+
+
+**Business Insight:** Enterprise customers are the core revenue driver, contributing most to the total monthly recurring revenue. Retaining these customers should be the top business priority because even a small increase in Enterprise churn would have a major revenue impact.
+
 
 2. Which industries have the highest churn rate?
 
-This query compared churned customers with total customers in each industry.
+This query compared churn rate in each industry.
 
-Key Finding:
 
-DevTools had the highest churn volume with 83 churned customers.
-FinTech followed with 76 churned customers.
-Cybersecurity had 72 churned customers.
+**Key Finding:**
 
-Business Insight: The company is losing the most customers in DevTools and FinTech. These industries should be prioritized for retention efforts, product improvements, and customer success outreach.
+- DevTools had the highest churn volume with 73.45% churn rate.
+- EdTech followed with 72.15% churn rate.
+- Cybersecurity had 72% churn rate.
+
+
+**Business Insight:** DevTools, EdTech, and Cybersecurity have the highest churn rates, which means these industries are losing a larger percentage of customers than any other segment. This suggests the product may not be meeting the specific needs of these industries. These segments should be prioritized for deeper investigation, targeted retention campaigns, feature improvements, and dedicated customer success support.
+
 
 3. Which countries bring the most ARR?
 
 This query measured annual recurring revenue by customer country.
 
-Key Finding:
 
-The United States generated the highest ARR at approximately $79.62M.
-The United Kingdom and India followed with $14.65M and $14.33M.
+**Key Finding:**
 
-Business Insight: The business is heavily dependent on the United States market, which contributes more than half of total ARR. This concentration increases risk and suggests the company should diversify growth into other regions.
+- The United States generated the highest ARR at approximately $79.62M.
+- The United Kingdom and India followed with $14.65M and $14.33M.
+
+
+**Business Insight:** The business is heavily dependent on the United States market, which contributes more than half of total ARR. This concentration increases risk and suggests the company should diversify growth into other regions.
+
 
 4. Which referral sources generate the highest-value customers?
 
 This query analyzed average ARR by acquisition source.
 
-Key Finding:
+**Key Finding:**
 
-Organic acquisition generated the highest-value customers with an average ARR of $28.7K.
-Partner referrals followed at $28.4K.
-Event-based acquisition produced the lowest-value customers at $25.1K.
+- Organic acquisition generated the highest-value customers with an average ARR of $28.7K.
+- Partner referrals followed at $28.4K.
+- Event-based acquisition produced the lowest-value customers at $25.1K.
 
-Business Insight: Organic and partner channels attract customers with higher long-term value. Marketing investment should shift toward these sources rather than lower-performing channels.
+**Business Insight:** Organic and partner channels attract customers with higher long-term value. Marketing investment should shift toward these sources rather than lower-performing channels.
+
 
 5. Which plan tier has the highest average MRR per customer?
 
 This query compared average monthly recurring revenue per customer across plan tiers.
 
-Key Finding: Enterprise customers had the highest average MRR per customer, significantly above Pro and Basic plans.
+**Key Finding:** Enterprise customers had the highest average MRR per customer, significantly above Pro and Basic plans.
 
-Business Insight: Enterprise accounts not only generate the most total revenue, but also the highest revenue per customer. Losing a single Enterprise customer is far more damaging than losing multiple Basic customers.
+**Business Insight:** Enterprise accounts not only generate the most total revenue, but also the highest revenue per customer. Losing a single Enterprise customer is far more damaging than losing multiple Basic customers.
 
 Customer Retention and Subscription Behavior
 6. How many customers upgraded vs downgraded?
