@@ -202,6 +202,12 @@ Specific objectives include:
 
 ---
 
+### Executive Overview Dashboard
+
+![Executive Overview Dashboard](dashboard_executive_overview.png)
+
+---
+
 ## Tools Used
 
 ### Excel
