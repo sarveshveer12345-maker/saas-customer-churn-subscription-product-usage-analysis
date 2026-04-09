@@ -206,6 +206,30 @@ Specific objectives include:
 
 ![Executive Overview Dashboard](dashboard_executive_overview.png)
 
+--- 
+
+### Product Usage & Engagement Dashboard
+
+![Product Usage & Engagement Dashboard](dashboard_product_usage_engagement.png)
+
+---
+
+### Support & Customer Experience Dashboard
+
+![Support & Customer Experience Dashboard](dashboard_support_customer_experience.png)
+
+---
+
+### Customer Churn Analysis Dashboard
+
+![Customer Churn Analysis Dashboard](dashboard_customer_churn_analysis.png)
+
+---
+
+### Customer Deep Dive Dashboard
+
+![Customer Deep Dive Dashboard](dashboard_customer_deep_dive.png)
+
 ---
 
 ## Tools Used
