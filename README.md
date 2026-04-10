@@ -697,26 +697,21 @@ There was no meaningful increase in churn as resolution time increased in this d
 2.	What are the biggest reasons customers leave?
 3.	Do customers usually downgrade before churning?
 4.	Which months have the highest churn?
-5.	Is support performance contributing to churn?
 
 
 ### Key Insights
 
--	352 out of 500 customers churned, resulting in an extremely high churn rate of 70.4%. That is not a minor performance issue. It indicates a fundamental product, pricing, or customer success problem.
 -	DevTools customers have the highest churn volume with 83 churned customers, followed by FinTech with 76 and Cybersecurity with 72.
 -	The leading churn reasons are feature limitations (114 customers), budget concerns (104), poor support (104), unknown reasons (95), competitor pressure (92), and pricing issues (91).
--	Feature-related and support-related churn together account for more than 200 lost customers. That means the company is not losing customers mainly because of price—it is losing them because customers do not believe the product delivers enough value.
 -	Only 8.8% of churned customers downgraded before leaving, while 91.2% churned directly without downgrading first. This means downgrades are not a reliable early warning sign in this dataset.
--	Churn spikes sharply in February with 133 churned customers, followed by October with 79 and July with 76. February should be treated as a critical churn-risk period.
-
+-	Churn spikes sharply in december with 133 churned customers, followed by november with 79 and october with 76. February should be treated as a critical churn-risk period.
 
 ### Business Recommendations
 
--	Treat customer downgrades as an immediate churn warning signal. Any customer who downgrades should automatically trigger proactive outreach from customer success.
--	Improve the product areas tied to feature-related churn. Customers are telling the company directly that the product is missing critical functionality.
--	Fix the support experience because poor support is one of the top reasons customers leave.
--	Run detailed retention campaigns before February and October because those months have the highest churn risk.
--	Stop accepting ‘unknown’ churn reasons. Require structured exit feedback from every churned customer so the business can identify the real drivers of churn.
+-	Focus retention efforts on DevTools, FinTech, and Cybersecurity by introducing industry-specific features, onboarding, and dedicated customer success support to address their higher churn risk.
+-	Prioritize fixing feature gaps and improving support quality, as these are the primary drivers of churn, rather than focusing only on pricing changes.
+-	Shift churn detection away from downgrade signals and instead monitor leading indicators like support tickets, escalations, and customer satisfaction.
+-	Plan targeted retention campaigns and proactive outreach before high-risk months like December, November, and October to reduce seasonal churn spikes.
 
 ---
 
