@@ -736,44 +736,44 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	Customer profile table including industry, country, plan tier, ARR, and MRR
 -	Ticket history table with year, priority, resolution time, satisfaction score, and escalation flag
 -	Customer product usage trend over time
--	Interactive slicers for country, industry, and account name
--	Drill-through functionality to investigate individual customers in detail
+-	Interactive slicers for country, industry, year and account name
 
 
 ### Business Questions
 
 1.	Which individual customers contribute the highest ARR and MRR?
-2.	What patterns exist in support history for high-risk customers?
+2.  What does the overall customer portfolio value look like?
 3.	How does customer product usage change over time?
-4.	Which accounts have repeated escalations or poor support experiences?
-5.	Which customers should be targeted first for retention efforts?
+4.	What patterns exist in customer support history (tickets, priority, escalation)?
 
 
 ### Key Insights
 
--	The Customer Deep Dive page transforms the dashboard from high-level reporting into a practical retention tool. Instead of only showing that churn exists, it identifies exactly which customers are most at risk.
--	High-value accounts such as Company_108, Company_11, and Company_107 contribute some of the highest ARR and MRR values. Losing only a few of these accounts would significantly reduce revenue.
--	The ticket history table shows several cases with extremely high resolution times and low satisfaction, particularly among escalated tickets. Those customers should be considered immediate churn risks.
--	Repeated support tickets, multiple escalations, and declining product usage are clear leading indicators of future churn.
--	The ability to filter by country, industry, and account name makes it possible to identify whether churn risk is concentrated in a specific segment or a specific customer.
+-	High-value accounts such as Company_403, Company_166, and Company_258 contribute some of the highest ARR and MRR values.
+-	The total ARR is approximately $136.06M and total MRR is $11.34M, indicating that a large portion of revenue is concentrated among a limited number of high-value customers.
+-	Customer product usage remains relatively stable throughout the year, fluctuating between ~19.5K and ~22.4K. The highest usage occurs in October (~22.4K), while noticeable dips appear in February (~19.7K) and November (~19.5K), indicating periodic drops rather than a consistent upward or downward trend.
+-	The support table shows repeated tickets across years (2023 and 2024) with both low and urgent priorities, indicating recurring issues rather than one-time problems.
 
 
 ### Business Recommendations
 
--	Use this page as the main operational dashboard for customer success teams.
--	Create a churn-risk score based on support escalations, declining usage, downgrades, and low satisfaction.
--	Prioritize outreach to the highest-value customers with repeated support issues or declining engagement.
--	Build automated alerts in Power BI for customers whose usage drops sharply or whose ticket volume suddenly increases.
--	Assign dedicated account managers to high-MRR customers so that potential churn risks are addressed before renewal periods.
-
+-	Prioritize retention and account management for top revenue-generating customers because losing even a single high-value account would significantly impact total revenue.
+-	Build a tiered customer strategy (Enterprise vs others) and allocate dedicated account managers to high-ARR customers to protect revenue stability.
+-	Focus on stabilizing engagement during low-usage months (February and November) by launching targeted campaigns (feature adoption nudges, onboarding refresh, or customer check-ins) to prevent potential churn during these dips.
+-	Identify customers with repeated ticket history and treat them as at-risk accounts by proactively resolving root causes instead of repeatedly reacting to issues.
+  
 ---
 
 ## Top Business Recommendations
 
 - Prioritize Enterprise retention because these customers generate most revenue.
+  
 - Improve product features causing the highest churn complaints.
+  
 - Create proactive support workflows for customers with repeated escalations.
+  
 - Focus acquisition spending on organic and partner channels.
+  
 - Build churn-risk alerts using ticket volume, feature complaints, and satisfaction scores.
 
 ---
@@ -861,7 +861,7 @@ This project demonstrates how combining SQL, Power BI, customer usage data, supp
   
 7. Designed five dashboard pages to analyze different parts of the business.
   
-8. Added slicers, page navigation buttons, and a customer deep-dive page for interactive analysis.
+8. Added slicers and page navigation buttons for interactive analysis.
   
 9. Converted the final findings into business insights and recommendations.
 
