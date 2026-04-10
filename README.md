@@ -531,7 +531,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	ARR distribution by country
 -	Average ARR by acquisition source
 -	Upgrade vs downgrade customer distribution
--	Churn percentage by plan tier
+-	Avg ARR by plan tier
 -	Interactive slicers for country, industry, and plan tier
 
   
