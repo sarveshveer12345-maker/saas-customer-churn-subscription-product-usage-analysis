@@ -537,11 +537,11 @@ There was no meaningful increase in churn as resolution time increased in this d
   
 ### Business Questions
 
-1.	Which subscription plan generates the highest recurring revenue?
+1.	Which subscription plan generates the highest MRR?
 2.	Which countries contribute the most ARR?
 3.	Which acquisition channels bring the highest-value customers?
 4.	Are more customers upgrading or downgrading?
-5.	Which plan tiers experience the highest churn?
+5.	Which subscription plan tier contributes the highest average Monthly Recurring Revenue (MRR)?
 
    
 ### Key Insights
@@ -550,16 +550,16 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	The United States is the dominant revenue market, generating $79.62M ARR, which is more than 58% of total ARR. The UK and India are the next largest markets with $14.65M and $14.33M respectively.
 -	Organic and partner acquisition channels bring the highest-value customers, with average ARR per customer of $28.7K and $28.4K. Event-based acquisition performs worst at $25.1K.
 -	The customer base is more heavily skewed toward upgrades than downgrades. 529 customers upgraded their subscription, while only 218 downgraded. This suggests many customers are finding enough value in the product to move to higher-tier plans.
--	Churn is distributed almost equally across plan tiers, but Enterprise has the highest churn share at 34.25%, followed closely by Pro at 33.19% and Basic at 32.56%. This is dangerous because the highest-value customers are also leaving at the highest rate.
+-	The Enterprise plan generates by far the highest average MRR at $4,917.71, contributing 74% of total average plan value. In comparison, Pro contributes $1,256.77 (19%) and Basic only $474.68 (7%).
 
   
 ### Business Recommendations
 
 -	Prioritize retention programs for Enterprise customers immediately. Losing even a small number of Enterprise accounts has a much larger revenue impact than losing many Basic accounts.
+-	Prioritize retention and expansion efforts in the US while using the UK and India as the next key markets for targeted growth and customer acquisition.
 -	Double down on organic and partner acquisition channels because they attract customers with stronger long-term revenue potential.
--	Investigate why downgrades are significantly higher than upgrades. That usually indicates customers are not seeing enough value to justify premium plans.
--	Create targeted save offers for Enterprise and Pro customers before renewal periods, including account reviews, onboarding support, and feature training.
--	Reduce dependence on low-performing acquisition channels such as events and ads unless their conversion quality improves.
+-	The company should strengthen upsell campaigns and identify the behaviors of upgraded customers to encourage more users to move to higher-tier plans.
+-	The company should prioritize retaining and expanding Enterprise customers while creating targeted upsell paths to move Pro customers into the Enterprise tier.
 
 --- 
 
