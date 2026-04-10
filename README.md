@@ -71,13 +71,13 @@ Specific objectives include:
 
 ---
 
-### Dataset Preview
+## Dataset Preview
+
+## Accounts Table
 
 ![Accounts Table Preview](accounts_table_preview.png)
 
 ## Dataset Information
-
-## Accounts Table
 
 | Attribute | Details |
 | --- | --- |
@@ -90,11 +90,11 @@ Specific objectives include:
 
 ---
 
-### Dataset Preview
+## Customer Churn Table
 
 ![Customer Churn Table Preview](customer_churn_table_preview.png)
 
-## Customer Churn Table
+## Dataset Information
 
 | Attribute | Details |
 | --- | --- |
@@ -107,11 +107,11 @@ Specific objectives include:
 
 ---
 
-### Dataset Preview
+## Product Usage Table
 
 ![Product Usage Table Preview](product_usage_table_preview.png)
 
-## Product Usage Table
+## Dataset Information
 
 | Attribute | Details |
 | --- | --- |
@@ -124,11 +124,11 @@ Specific objectives include:
 
 ---
 
-### Dataset Preview
+## Subscriptions Table
 
 ![Subscriptions Table Preview](subscriptions_table_preview.png)
 
-## Subscriptions Table
+## Dataset Information
 
 | Attribute | Details |
 | --- | --- |
@@ -141,11 +141,11 @@ Specific objectives include:
 
 ---
 
-### Dataset Preview
+## Support Tickets Table
 
 ![Support Tickets Table Preview](support_tickets_table_preview.png)
 
-## Support Tickets Table
+## Dataset Information
 
 | Attribute | Details |
 | --- | --- |
