@@ -591,31 +591,30 @@ There was no meaningful increase in churn as resolution time increased in this d
   
 ### Business Questions
 
-1.	Which product features drive the highest engagement?
-2.	What features are most important to Enterprise customers?
-3.	How much of total usage comes from beta features?
-4.	Are beta features creating product quality issues?
-5.	How does overall product usage change month by month?
+1.	Which product features are used most frequently across all customers?
+2.	Which beta features generate the highest number of product errors?
+3.	Which features are used most by Enterprise customers?
+4.	How much of total product usage comes from beta versus non-beta features?
+5.	How does product usage change over time throughout the year?
 
 
 ### Key Insights
 
--	Total product engagement is high, with 251K feature interactions and an average of 50.44 uses per customer.
--	Non-beta features account for 89.79% of all usage, while beta features contribute only 10.21%. Customers clearly rely on stable, proven functionality rather than experimental features.
--	The most-used features overall are feature_32, feature_15, feature_6, and feature_20, each with more than 6.5K interactions.
--	Enterprise customers show a different behavior pattern. Their most-used features are feature_10, feature_2, feature_39, and feature_6, meaning Enterprise customers depend heavily on a narrower set of advanced capabilities.
--	Product usage is relatively stable across the year, ranging from 19.5K to 22.4K interactions per month. March is the strongest month at 22.42K, while April is the weakest at 19.51K.
--	Beta features are generating substantial friction. Feature_38, feature_18, and feature_28 have the highest error counts, with up to 56 errors each.
+-	feature_32 is the most-used feature with 6.69K uses, followed closely by feature_15 (6.62K) and feature_6 (6.55K). Usage is relatively concentrated among a small group of features, suggesting these deliver most of the product’s core value.
+-	feature_38 has the highest error count at 56, followed by feature_18 with 51 and feature_28 with 48. These beta features appear to create the largest reliability issues and may negatively affect customer experience.
+-	Enterprise customers use feature_10 the most at 2.64K uses, followed by feature_2 at 2.38K and feature_39 at 2.34K. Enterprise usage is concentrated around a few high-value features that likely influence retention and revenue.
+-	Non-beta features account for 224.9K uses, or 89.79% of total usage, while beta features contribute only 25.6K uses, or 10.21%. Customers rely overwhelmingly on stable features rather than experimental ones.
+-	Product usage remains relatively stable throughout the year, generally ranging between 19.5K and 22.4K uses per month. Usage peaks in October at 22.42K and falls to its lowest point in November at 19.51K, indicating mild seasonality rather than major shifts in engagement.
 
 
 ### Business Recommendations
 
--	Focus future product development on the most-used features because they drive the majority of customer value and engagement.
--	Protect Enterprise customer retention by improving the advanced features they use most frequently.
--	Stop treating beta features as harmless experiments. The error-heavy beta features should either be fixed quickly or removed before they damage customer trust.
--	Use March’s higher engagement levels as a benchmark to identify what campaigns, releases, or customer activity drove stronger usage.
--	Build customer education and onboarding around the most valuable features to increase adoption and reduce downgrade risk.
-
+-	Prioritize continued investment, performance improvements, and onboarding around the top-used features because they drive the majority of customer engagement.
+-	Focus product and engineering efforts on fixing the highest-error beta features before expanding beta adoption or releasing them broadly.
+-	Protect and enhance the most-used Enterprise features first, since problems in these areas could have the biggest impact on high-value customers and MRR.
+-	Continue improving core non-beta features while selectively promoting only the strongest beta features that show clear customer demand and low error rates.
+-	Investigate what drove the October spike and November decline, then use those findings to improve engagement during weaker months and replicate successful patterns from stronger periods.
+  
 ---
 
 ## Support & Customer Experience Dashboard
