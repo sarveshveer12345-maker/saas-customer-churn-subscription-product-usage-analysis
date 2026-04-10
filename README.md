@@ -637,36 +637,32 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	KPI cards for support ticket volume, resolution time, satisfaction score, and escalated ticket percentage
 -	Top customers by support ticket volume
 -	Escalated ticket rate by churn status
--	Satisfaction score by ticket priority
+-	Average Satisfaction score by ticket priority
 -	Support ticket volume by industry
 -	Interactive slicers for priority, industry, escalation flag, and country
 
   
 ### Business Questions
 
-1.	Which customers generate the highest support demand?
-2.	Are churned customers more likely to escalate support issues?
-3.	Does ticket priority affect customer satisfaction?
-4.	Which industries create the most support workload?
-5.	Is support quality contributing to churn?
-
+1.	Which customers generate the highest number of support tickets?
+2.	Which support ticket priority level occurs most frequently?
+3.	Which industries appear to require the most support?
+4.	Does ticket escalation rate differ between active and churned customers?
    
 ### Key Insights
 
--	The business handled 2,000 support tickets with an average resolution time of 35.86 hours. That is not catastrophic, but it is slow enough to create frustration, especially for high-value accounts.
--	Churned customers have a higher escalated ticket rate of 5.09%, compared with only 3.97% for active customers. This strongly suggests that unresolved support issues are directly connected to churn.
--	Satisfaction scores are fairly consistent across ticket priorities, ranging from 3.93 to 4.02. However, even the highest score is not impressive. Customers are satisfied enough not to complain loudly, but not satisfied enough to become loyal.
--	FinTech and DevTools customers create the highest support burden, with 457 and 425 tickets respectively.
--	A small number of accounts generate a disproportionate number of tickets. Company_340, Company_256, and Company_169 each submitted 9 to 11 tickets. Those accounts should be treated as at-risk customers rather than normal support cases.
+-	Company_340 created 11 support tickets, making the most support-intensive accounts in the dataset.
+-	Low-priority tickets represent the largest share of satisfaction score, significantly outweighing high- and urgent-priority issues. This suggests customers are frequently experiencing serious problems that require urgent attention.
+-	Industries such as FinTech and DevTools appear repeatedly among the highest-support segments, indicating that customers in these industries require more assistance and may face more product complexity.
+-	Churned customers have a much higher escalated ticket rate at 56.2%, compared with active customers. This suggests customers whose issues are repeatedly escalated are significantly more likely to leave.
 
   
 ### Business Recommendations
 
--	Reduce average resolution time, especially for Enterprise and high-value customers. Waiting more than 35 hours for issue resolution is too slow in a SaaS business.
--	Create an early-warning system for customers with repeated tickets or multiple escalations. These are usually the customers most likely to churn next.
--	Prioritize support resources toward FinTech and DevTools because those industries generate the largest ticket volumes.
--	Review the accounts with unusually high ticket counts and assign dedicated customer success outreach before they leave.
--	Improve escalation handling processes. If escalated tickets continue to correlate with churn, the business is not just failing in support—it is actively creating churn.
+-	These high-ticket accounts should be reviewed individually by the customer success team to identify recurring problems, reduce ticket volume, and lower churn risk.
+-	The company should reduce the number of high-priority tickets by identifying the root causes behind the most common urgent issues and resolving them proactively.
+-	Create industry-specific onboarding, documentation, and support resources for high-support industries to reduce ticket volume and improve customer satisfaction.
+-	Build an early churn-risk alert for customers with escalated tickets and require proactive follow-up from the support or customer success team before those customers cancel.
 
 ---
 
