@@ -82,7 +82,7 @@ Specific objectives include:
 | Attribute | Details |
 | --- | --- |
 | Table Name | `accounts` |
-| Description | Contains customer account details such as company name, industry, country, and acquisition source. |
+| Description | Contains customer account details such as company name, industry, country, and referral source. |
 | Primary Key | `account_id` |
 | Foreign Keys | Referenced by `subscriptions.account_id`, `support_tickets.account_id`, and `customer_churn.account_id` |
 | Key Columns | `account_id`, `account_name`, `industry`, `country`, `referral_source` |
