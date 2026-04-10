@@ -150,7 +150,7 @@ Specific objectives include:
 | Attribute | Details |
 | --- | --- |
 | Table Name | `support_tickets` |
-| Description | Contains support ticket activity, including ticket priority, escalation, satisfaction, and resolution time. |
+| Description | Contains support ticket activity, including ticket priority, escalation, satisfaction score, and resolution time. |
 | Primary Key | `ticket_id` |
 | Foreign Keys | `account_id` → `accounts.account_id` |
 | Key Columns | `ticket_id`, `account_id`, `priority`, `satisfaction_score`, `resolution_time_hours`, `escalation_flag` |
