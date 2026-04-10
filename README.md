@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyzes a SaaS company's customer, subscription, support, and product usage data to uncover the reasons behind customer churn and identify opportunities to improve retention, engagement, and revenue.
+This project analyzes a SaaS company's customer, subscription, support ticket, and product usage data to uncover the reasons behind customer churn and identify opportunities to improve retention, engagement, and revenue.
 
 The analysis combines SQL, Excel, and Power BI to answer critical business questions such as:
 
@@ -17,7 +17,7 @@ The analysis combines SQL, Excel, and Power BI to answer critical business quest
 
 - Data cleaning and preparation in Excel and Power Query
 - SQL analysis across multiple related tables
-- A relational data model built in Power BI
+- A relational data model connecting five related tables in Power BI
 - Five interactive dashboard pages focused on churn, revenue, customer behavior, support, and deep-dive customer analysis
 - Business recommendations based on data-driven findings
 
@@ -62,7 +62,7 @@ Specific objectives include:
 
 - Measure overall churn performance and identify which customer groups have the highest churn rate.
 - Compare product usage behavior between churned and active customers.
-- Analyze whether support ticket volume, escalation rate, satisfaction score, and resolution time are related to churn.
+- Analyze whether customers downgrade their plans before churning.
 - Determine which subscription plans generate the highest Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR).
 - Identify the most common churn reasons and track how churn changes over time.
 - Analyze whether customers downgrade their plans before churning.
