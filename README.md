@@ -117,7 +117,7 @@ Specific objectives include:
 | --- | --- |
 | Table Name | `product_usage` |
 | Description | Stores feature-level product usage data for each subscription, including usage duration, frequency, beta feature usage, and errors. |
-| Primary Key | No single unique key identified; analysis is performed at feature and subscription level |
+| Primary Key | Composite Key: `subscription_id` + `feature_name` |
 | Foreign Keys | `subscription_id` → `subscriptions.subscription_id` |
 | Key Columns | `subscription_id`, `feature_name`, `usage_count`, `usage_duration_seconds`, `is_beta_feature`, `error_count` |
 | Used For | Feature usage analysis, churn vs usage comparison, beta feature analysis, usage segmentation |
@@ -213,7 +213,7 @@ Specific objectives include:
 
 ## SQL Analysis
 
-The SQL analysis was performed using five related datasets: accounts, subscriptions, product usage, support tickets, and customer churn events. These tables were connected through account_id and subscription_id to investigate the relationship between customer behavior, revenue, support experience, and churn.
+The SQL analysis was performed using five related datasets: accounts, subscriptions, product usage, support tickets, and customer churn. These tables were connected through account_id and subscription_id to investigate the relationship between customer behavior, revenue, support experience, and churn.
 
 The analysis focused on identifying which customers generate the most value, which customers are most likely to churn, and what business factors are driving that churn.
 
@@ -245,7 +245,7 @@ This query compared churn rate in each industry.
 - Cybersecurity had 72% churn rate.
 
 
-**Business Insight:** DevTools, EdTech, and Cybersecurity have the highest churn rates, which means these industries are losing a larger percentage of customers than any other segment. This suggests the product may not be meeting the specific needs of these industries. These segments should be prioritized for deeper investigation, targeted retention campaigns, feature improvements, and dedicated customer success support.
+**Business Insight:** DevTools, EdTech, and Cybersecurity had the highest churn rates, which means these industries are losing a larger percentage of customers than any other segment. This suggests the product may not be meeting the specific needs of these industries. These segments should be prioritized for deeper investigation, targeted retention campaigns, feature improvements, and dedicated customer success support.
 
 ---
 ### 3. Which countries bring the most ARR?
@@ -374,7 +374,7 @@ This query compared average monthly recurring revenue per customer across plan t
 ### 14. Which beta features have the highest error count?
     
 
-**Key Finding:** Feature_38 with 56 error counts, feature_18 with 51 error counts, and feature_28 with 48 error counts has the highest beta feature error counts.
+**Key Finding:** Feature_38 with 56 error counts, feature_18 with 51 error counts, and feature_28 with 48 error counts had the highest beta feature error counts.
 
 
 **Business Insight:** The company is exposing customers to unstable beta features that may be damaging customer satisfaction and trust.
@@ -384,7 +384,7 @@ This query compared average monthly recurring revenue per customer across plan t
 ### 15. Does lower usage duration lead to churn?
 
 
-**Key Finding:** Customers in the low-usage segment has the highest churn rate, while high-usage customers has the lower churn rate.
+**Key Finding:** Customers in the low-usage segment had the highest churn rate, while high-usage customers has the lower churn rate.
 
 
 **Business Insight:** Product engagement is one of the strongest predictors of retention. Customers who stop using the platform are far more likely to leave.
@@ -432,7 +432,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 - HealthTech generated 408 support tickets.
 
 
-**Business Insight:** FinTech, DevTools, and HealthTech create the highest support burden, which suggests customers in these industries face more product complexity, onboarding challenges, or unresolved issues than other segments. Since DevTools also has one of the highest churn rates, heavy support demand may be contributing directly to customer loss. These industries should receive targeted product improvements, stronger onboarding, and dedicated customer success resources.
+**Business Insight:** FinTech, DevTools, and HealthTech create the highest support burden, which suggests customers in these industries face more product complexity, onboarding challenges, or unresolved issues than other segments. Since DevTools also had one of the highest churn rates, heavy support demand may be contributing directly to customer loss. These industries should receive targeted product improvements, stronger onboarding, and dedicated customer success resources.
 
 
 ---
