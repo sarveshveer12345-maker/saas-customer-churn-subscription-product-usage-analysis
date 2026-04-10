@@ -25,6 +25,15 @@ The goal of this project is not only to visualize performance, but to demonstrat
 
 ---
 
+## Executive Summary
+
+- 70.4% of customers churned, revealing a major retention problem.
+- Enterprise customers generate 75% of total MRR and also show the highest churn percentage, making their retention especially important.
+- Feature limitations and poor support are the top drivers of churn.
+- Product usage alone does not explain churn; support quality and missing features matter more.
+- FinTech and DevTools are the highest-risk industries due to both high churn and high support demand.
+  
+---
 ## Business Context
 
 Customer churn is one of the biggest challenges for SaaS businesses because losing customers directly reduces recurring revenue and increases customer acquisition costs.
@@ -336,7 +345,7 @@ This query compared average monthly recurring revenue per customer across plan t
 **Key Finding:** The most-used features are feature_32 & feature_15 each with more than 6.6K uses.
 
 
-**Business Insight:** These features drive the majority of customer engagement and appear to be the core value of the product. The company should prioritize improving, stabilizing, and promoting these features because any issues or poor experience in them would affect a large portion of customers. These features drive the majority of product engagement and should receive the highest development and support priority.
+**Business Insight:** These features drive the majority of customer engagement and appear to be the core value of the product. The company should prioritize improving and promoting these features because they have the greatest impact on user activity.
 
 ---
 ### 12. Which features are most used by Enterprise customers?
@@ -540,7 +549,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	Enterprise customers generate the majority of recurring revenue with $8.47M MRR, accounting for nearly 75% of total MRR. Pro customers contribute $2.11M, while Basic customers contribute only $0.76M.
 -	The United States is the dominant revenue market, generating $79.62M ARR, which is more than 58% of total ARR. The UK and India are the next largest markets with $14.65M and $14.33M respectively.
 -	Organic and partner acquisition channels bring the highest-value customers, with average ARR per customer of $28.7K and $28.4K. Event-based acquisition performs worst at $25.1K.
--	The customer base is heavily skewed toward downgrades rather than upgrades. 70.82% of customers downgraded their subscription, while only 29.18% upgraded.
+-	The customer base is more heavily skewed toward upgrades than downgrades. 529 customers upgraded their subscription, while only 218 downgraded. This suggests many customers are finding enough value in the product to move to higher-tier plans.
 -	Churn is distributed almost equally across plan tiers, but Enterprise has the highest churn share at 34.25%, followed closely by Pro at 33.19% and Basic at 32.56%. This is dangerous because the highest-value customers are also leaving at the highest rate.
 
   
@@ -702,7 +711,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	DevTools customers have the highest churn volume with 83 churned customers, followed by FinTech with 76 and Cybersecurity with 72.
 -	The leading churn reasons are feature limitations (114 customers), budget concerns (104), poor support (104), unknown reasons (95), competitor pressure (92), and pricing issues (91).
 -	Feature-related and support-related churn together account for more than 200 lost customers. That means the company is not losing customers mainly because of price—it is losing them because customers do not believe the product delivers enough value.
--	91.2% of churned customers downgraded before leaving. This is one of the strongest warning signs in the entire dashboard. Downgrading is not an isolated event; it is the final stage before churn.
+-	Only 8.8% of churned customers downgraded before leaving, while 91.2% churned directly without downgrading first. This means downgrades are not a reliable early warning sign in this dataset.
 -	Churn spikes sharply in February with 133 churned customers, followed by October with 79 and July with 76. February should be treated as a critical churn-risk period.
 
 
@@ -766,6 +775,30 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	Prioritize outreach to the highest-value customers with repeated support issues or declining engagement.
 -	Build automated alerts in Power BI for customers whose usage drops sharply or whose ticket volume suddenly increases.
 -	Assign dedicated account managers to high-MRR customers so that potential churn risks are addressed before renewal periods.
+
+---
+
+## Top Business Recommendations
+
+- Prioritize Enterprise retention because these customers generate most revenue.
+- Improve product features causing the highest churn complaints.
+- Create proactive support workflows for customers with repeated escalations.
+- Focus acquisition spending on organic and partner channels.
+- Build churn-risk alerts using ticket volume, feature complaints, and satisfaction scores.
+
+---
+
+## Conclusion
+
+The analysis reveals that the business is facing a severe customer retention problem, with a churn rate of 70.4% and 352 out of 500 customers leaving.
+
+The biggest drivers of churn are not pricing alone. Customers are primarily leaving because of feature limitations, poor support experience, repeated downgrades, and unresolved product issues. More than 91% of churned customers downgraded before leaving, making downgrades one of the strongest early warning signs of churn.
+
+The dashboard also shows that Enterprise customers generate the majority of revenue, contributing $8.47M of the total $11.34M MRR. However, these high-value customers are also churning at the highest rate, creating significant revenue risk.
+
+Support performance is another major issue. Churned customers experience higher escalation rates and long resolution times, indicating that weak customer support is directly contributing to lost customers.
+
+This project demonstrates how combining SQL, Power BI, customer usage data, support data, and churn behavior can help identify the real reasons customers leave and support more effective retention strategies.
 
 ---
 
@@ -875,11 +908,11 @@ saas-customer-churn-subscription-product-usage-analysis/
 ## Repository Structure
 
 - **data**
-  - Contains the raw and cleaned SaaS subscription, usage, support, and churn datasets.
-
+  - Contains the raw and cleaned SaaS accounts, subscription, product usage, support ticket, and customer churn datasets.
+   
 - **sql**
-  - Includes SQL scripts for schema creation, data cleaning, KPI calculations, churn analysis, product usage analysis, support          analysis, and customer-level investigation.
-
+  - Contains SQL queries for KPI calculations, churn analysis, subscription analysis, product usage analysis, support analysis, and customer-level           investigation.
+    
 - **powerbi**
   - Contains the Power BI dashboard file used to build the complete SaaS churn analysis dashboard.
 
@@ -891,12 +924,14 @@ saas-customer-churn-subscription-product-usage-analysis/
   - Customer Churn Analysis
   - Customer Deep Dive
 
--  **dataset_preview**
-   - Contains preview screenshots of each source dataset table used in the project.
-
-- **docs**
-  - Includes supporting project documentation such as business questions, KPI summaries, key insights, recommendations, and             dashboard explanations.
-  
+-  **dataset_images**
+   Contains preview screenshots of each source dataset table used in the project.
+   - accounts_table_preview.png
+   - customer_churn_table_preview.png
+   - product_usage_table_preview.png
+   - subscriptions_table_preview.png
+   - support_tickets_table_preview.png    
+ 
 - **README.md**
  -  Main project documentation containing project overview, objectives, dataset details, SQL analysis, dashboard previews, business     insights, and recommendations.
 
@@ -906,14 +941,14 @@ saas-customer-churn-subscription-product-usage-analysis/
 
 1. Download the five source datasets from the `data/` folder:
    - `accounts.xlsx`
+   - `customer_churn.xlsx`
+   - `product_usage.xlsx`
    - `subscriptions.xlsx`
-   - `feature_usage.xlsx`
    - `support_tickets.xlsx`
-   - `churn_events.xlsx`
 
 2. Import the datasets into your SQL environment and create relationships using `account_id`.
 
-3. Run the SQL queries from `sql/saas_customer_churn_analysis.sql` to calculate KPIs, analyze churn, investigate support issues, evaluate product usage, and identify customer retention risks.
+3. Run the SQL queries from `sql/saas_customer_churn_business_analysis.sql` to calculate KPIs, analyze churn, investigate support issues, evaluate product usage, and identify customer retention risks.
 
 4. Open `powerbi/saas_customer_churn_analysis_dashboard.pbix` in Power BI Desktop.
 
@@ -927,20 +962,6 @@ saas-customer-churn-subscription-product-usage-analysis/
 6. Use the slicers for country, industry, plan tier, year, and account name to analyze different customer segments and churn scenarios.
 
 7. Use the Customer Deep Dive page to investigate specific accounts, review support history, monitor product usage trends, and identify high-risk customers before they churn.
-
----
-
-## Conclusion
-
-The analysis reveals that the business is facing a severe customer retention problem, with a churn rate of 70.4% and 352 out of 500 customers leaving.
-
-The biggest drivers of churn are not pricing alone. Customers are primarily leaving because of feature limitations, poor support experience, repeated downgrades, and unresolved product issues. More than 91% of churned customers downgraded before leaving, making downgrades one of the strongest early warning signs of churn.
-
-The dashboard also shows that Enterprise customers generate the majority of revenue, contributing $8.47M of the total $11.34M MRR. However, these high-value customers are also churning at the highest rate, creating significant revenue risk.
-
-Support performance is another major issue. Churned customers experience higher escalation rates and long resolution times, indicating that weak customer support is directly contributing to lost customers.
-
-This project demonstrates how combining SQL, Power BI, customer usage data, support data, and churn behavior can help identify the real reasons customers leave and support more effective retention strategies.
 
 --
 
