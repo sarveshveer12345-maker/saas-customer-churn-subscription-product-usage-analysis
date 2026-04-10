@@ -29,7 +29,7 @@ The goal of this project is not only to visualize performance, but to demonstrat
 
 - 70.4% of customers churned, revealing a major retention problem.
 - Enterprise customers generate 75% of total MRR and also show the highest churn percentage, making their retention especially important.
-- Feature limitations and poor support are the top drivers of churn.
+- Feature limitations and poor support are the most common churn drivers, although the main reason varies by plan tier.
 - Product usage alone does not explain churn; support quality and missing features matter more.
 - FinTech and DevTools are the highest-risk industries due to both high churn and high support demand.
   
