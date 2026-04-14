@@ -27,13 +27,24 @@ The goal of this project is not only to visualize performance, but to demonstrat
 
 ## Executive Summary
 
-- 70.4% of customers churned, revealing a major retention problem.
-- Enterprise customers generate 75% of total MRR and also show the highest churn percentage, making their retention especially important.
-- Feature limitations and poor support are the most common churn drivers, although the main reason varies by plan tier.
-- Product usage alone does not explain churn; support quality and missing features matter more.
-- FinTech and DevTools are the highest-risk industries due to both high churn and high support demand.
-  
+The business is experiencing critically high churn (70.4%), putting over $11.34M in MRR at risk.
+
+Enterprise customers contribute 75% of total revenue, yet also show the highest churn exposure, making retention a top financial priority.
+
+Contrary to common assumptions, churn is not driven by low usage alone. Customers who churn exhibit similar usage levels but significantly higher support escalations and dissatisfaction.
+
+The primary churn drivers are:
+- Feature gaps
+- Poor support experience
+- High issue escalation rates
+
+To reduce churn, the business must prioritize:
+1. Enterprise customer retention programs
+2. Fixing high-error and high-demand features
+3. Proactive support intervention for high-risk accounts
+ 
 ---
+
 ## Business Context
 
 Customer churn is one of the biggest challenges for SaaS businesses because losing customers directly reduces recurring revenue and increases customer acquisition costs.
