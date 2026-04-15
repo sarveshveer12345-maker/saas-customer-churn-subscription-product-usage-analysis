@@ -76,7 +76,6 @@ Specific objectives include:
 - Analyze whether customers downgrade their plans before churning.
 - Determine which subscription plans generate the highest Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR).
 - Identify the most common churn reasons and track how churn changes over time.
-- Analyze whether customers downgrade their plans before churning.
 - Build an interactive dashboard that allows business users to explore customer-level details and specific accounts using slicers and page navigation.
 - Provide clear business recommendations to reduce churn and improve customer retention.
 
@@ -219,6 +218,7 @@ Specific objectives include:
 
 - Total Feature Usage = SUM(product_usage_metrics[usage_count])
 
+**Note: Table names in DAX are prefixed (customer_) for clarity within the Power BI model.**
 
 ---
 
@@ -398,7 +398,7 @@ This query compared average monthly recurring revenue per customer across plan t
 ### 15. Does lower usage duration lead to churn?
 
 
-**Key Finding:** Customers in the low-usage segment had the highest churn rate, while high-usage customers has the lower churn rate.
+**Key Finding:** Customers in the low-usage segment had the highest churn rate, while high-usage customers have the lower churn rate.
 
 
 **Business Insight:** Product engagement is one of the strongest predictors of retention. Customers who stop using the platform are far more likely to leave.
@@ -718,7 +718,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	DevTools represents a high-risk segment with the highest churn volume (83 customers), indicating potential product-market misalignment and increased revenue risk.
 -	The leading churn reasons are feature limitations (114 customers), budget concerns (104), poor support (104), unknown reasons (95), competitor pressure (92), and pricing issues (91).
 -	Only 8.8% of churned customers downgraded before leaving, while 91.2% churned directly without downgrading first. This means downgrades are not a reliable early warning sign in this dataset.
--	Churn spikes sharply in december with 133 churned customers, followed by november with 79 and october with 76. February should be treated as a critical churn-risk period.
+-	Churn spikes sharply in December with 133 churned customers, followed by November with 79 and October with 76. indicating a strong seasonal churn pattern in the final quarter.
 
 ### Business Recommendations
 
@@ -782,7 +782,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 - Prioritize Enterprise retention because these customers generate most revenue.
   
-- Improve product features causing the highest churn complaints.
+- Prioritize fixing high-impact product gaps that directly contribute to churn and revenue loss.
   
 - Create proactive support workflows for customers with repeated escalations.
   
@@ -797,19 +797,19 @@ There was no meaningful increase in churn as resolution time increased in this d
 Based on the analysis, the following actions would be prioritized to reduce churn and protect revenue:
 
 1. **Protect High-Value Enterprise Accounts Immediately**
-   Identify Enterprise customers with rising support tickets, escalations, or declining satisfaction and assign dedicated account management to prevent high-impact revenue loss.
+   Identify Enterprise customers with rising support tickets, escalations, or declining satisfaction and assign dedicated account management to prevent    high-impact revenue loss.
 
 2. **Fix High-Impact Product Issues and Feature Gaps**
-   Prioritize improvements in the most-used features and address top churn-related complaints, especially around missing functionality and unstable beta features.
+   Prioritize improvements in the most-used features and address top churn-related complaints, especially around missing functionality and unstable        beta features.
 
 3. **Build a Proactive Churn Risk Monitoring System**
-   Develop a churn alert framework using leading indicators such as ticket volume, escalation rate, satisfaction score, and usage drops to intervene before customers cancel.
+   Develop a churn alert framework using leading indicators such as ticket volume, escalation rate, satisfaction score, and usage drops to intervene       before customers cancel.
 
 4. **Improve Support Quality, Not Just Speed**
-   Focus on resolving root causes of customer issues rather than just reducing resolution time, as escalations and repeated issues are more strongly linked to churn.
+   Focus on resolving root causes of customer issues rather than just reducing resolution time, as escalations and repeated issues are more strongly       linked to churn.
 
 5. **Target High-Risk Industries with Tailored Strategies**
-   Design industry-specific onboarding, feature enhancements, and support strategies for segments like DevTools and FinTech that show both high churn and high support demand.
+   Design industry-specific onboarding, feature enhancements, and support strategies for segments like DevTools and FinTech that show both high churn      and high support demand.
 
 These actions shift the business from reactive churn analysis to proactive customer retention and revenue protection.
 
@@ -820,7 +820,7 @@ These actions shift the business from reactive churn analysis to proactive custo
 
 The analysis reveals that the business is facing a severe customer retention problem, with a churn rate of 70.4% and 352 out of 500 customers leaving.
 
-The biggest drivers of churn are not pricing alone. Customers are primarily leaving because of feature limitations, poor support experience, repeated downgrades, and unresolved product issues. More than 91% of churned customers downgraded before leaving, making downgrades one of the strongest early warning signs of churn.
+The biggest drivers of churn are not pricing alone. Customers are primarily leaving because of feature limitations, poor support experience, repeated downgrades, and unresolved product issues. More than 91% of churned customers did NOT downgrade before leaving, making downgrades a weak early warning signal for churn.
 
 The dashboard also shows that Enterprise customers generate the majority of revenue, contributing $8.47M of the total $11.34M MRR. However, these high-value customers are also churning at the highest rate, creating significant revenue risk.
 
