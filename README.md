@@ -666,8 +666,8 @@ There was no meaningful increase in churn as resolution time increased in this d
 ### Key Insights
 
 -	Company_340 created 11 support tickets, making the most support-intensive accounts in the dataset.
--	Low-priority tickets represent the largest share of satisfaction score, significantly outweighing high- and urgent-priority issues. This suggests customers are frequently experiencing serious problems that require urgent attention.
--	Industries such as FinTech and DevTools appear repeatedly among the highest-support segments, indicating that customers in these industries require more assistance and may face more product complexity.
+-	Low-priority tickets account for the majority of support volume, indicating that most customer issues are not critical but still contribute to          overall support workload..
+-	Industries such as FinTech and DevTools appear repeatedly among the highest-support segments, indicating that customers in these industries require     more assistance and may face more product complexity.
 -	Higher escalation rates among churned customers (5.09% vs 3.97%) signal unresolved issues and increased churn risk.
 
   
