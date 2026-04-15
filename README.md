@@ -236,7 +236,7 @@ This query measures which subscription plan contributes the most recurring reven
 
 **Key Finding:**
 
-- Enterprise generated the highest total MRR at approximately $8.47M.
+- Enterprise customers contribute the majority of total MRR ($8.47M), creating significant revenue concentration risk if churn is not controlled in this segment.
 - Pro contributed around $2.11M.
 - Basic contributed only $0.76M.
 
@@ -251,7 +251,7 @@ This query compared churn rate in each industry.
 
 **Key Finding:**
 
-- DevTools had the highest churn volume with 73.45% churn rate.
+- DevTools represents a high-risk segment with the highest churn rate (73.45%), indicating potential product-market misalignment and increased revenue leakage.
 - EdTech followed with 72.15% churn rate.
 - Cybersecurity had 72% churn rate.
 
@@ -304,6 +304,9 @@ This query compared average monthly recurring revenue per customer across plan t
 **Business Insight:** The number of upgraded customers is more than twice the number of downgraded customers, which suggests that many customers are finding enough value in the product to move to higher-tier plans. This is a strong sign of product-market fit and successful expansion within the existing customer base. The company should analyze what drives these upgrades—such as specific features, industries, or usage patterns—and use those insights to encourage more customers to move up.
 
 ---
+
+## Additional Analysis
+
 ### 7. Which plan has the highest upgrade rate?
 
 
@@ -665,7 +668,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 -	Company_340 created 11 support tickets, making the most support-intensive accounts in the dataset.
 -	Low-priority tickets represent the largest share of satisfaction score, significantly outweighing high- and urgent-priority issues. This suggests customers are frequently experiencing serious problems that require urgent attention.
 -	Industries such as FinTech and DevTools appear repeatedly among the highest-support segments, indicating that customers in these industries require more assistance and may face more product complexity.
--	Churned customers have a much higher escalated ticket rate at 56.2%, compared with active customers. This suggests customers whose issues are repeatedly escalated are significantly more likely to leave.
+-	Higher escalation rates among churned customers (5.09% vs 3.97%) signal unresolved issues and increased churn risk.
 
   
 ### Business Recommendations
@@ -712,7 +715,7 @@ There was no meaningful increase in churn as resolution time increased in this d
 
 ### Key Insights
 
--	DevTools customers have the highest churn volume with 83 churned customers, followed by FinTech with 76 and Cybersecurity with 72.
+-	DevTools represents a high-risk segment with the highest churn volume (83 customers), indicating potential product-market misalignment and increased revenue risk.
 -	The leading churn reasons are feature limitations (114 customers), budget concerns (104), poor support (104), unknown reasons (95), competitor pressure (92), and pricing issues (91).
 -	Only 8.8% of churned customers downgraded before leaving, while 91.2% churned directly without downgrading first. This means downgrades are not a reliable early warning sign in this dataset.
 -	Churn spikes sharply in december with 133 churned customers, followed by november with 79 and october with 76. February should be treated as a critical churn-risk period.
@@ -786,6 +789,30 @@ There was no meaningful increase in churn as resolution time increased in this d
 - Focus acquisition spending on organic and partner channels.
   
 - Build churn-risk alerts using ticket volume, feature complaints, and satisfaction scores.
+
+---
+
+## If I Were the Business Analyst
+
+Based on the analysis, the following actions would be prioritized to reduce churn and protect revenue:
+
+1. **Protect High-Value Enterprise Accounts Immediately**
+   Identify Enterprise customers with rising support tickets, escalations, or declining satisfaction and assign dedicated account management to prevent high-impact revenue loss.
+
+2. **Fix High-Impact Product Issues and Feature Gaps**
+   Prioritize improvements in the most-used features and address top churn-related complaints, especially around missing functionality and unstable beta features.
+
+3. **Build a Proactive Churn Risk Monitoring System**
+   Develop a churn alert framework using leading indicators such as ticket volume, escalation rate, satisfaction score, and usage drops to intervene before customers cancel.
+
+4. **Improve Support Quality, Not Just Speed**
+   Focus on resolving root causes of customer issues rather than just reducing resolution time, as escalations and repeated issues are more strongly linked to churn.
+
+5. **Target High-Risk Industries with Tailored Strategies**
+   Design industry-specific onboarding, feature enhancements, and support strategies for segments like DevTools and FinTech that show both high churn and high support demand.
+
+These actions shift the business from reactive churn analysis to proactive customer retention and revenue protection.
+
 
 ---
 
