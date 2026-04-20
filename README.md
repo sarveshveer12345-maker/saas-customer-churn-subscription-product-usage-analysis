@@ -907,6 +907,7 @@ This project demonstrates how combining SQL, Power BI, customer usage data, supp
 
 ## Project Structure
 
+```
 saas-customer-churn-subscription-product-usage-analysis/
 │
 ├── README.md
@@ -930,7 +931,7 @@ saas-customer-churn-subscription-product-usage-analysis/
 │   ├── dashboard_support_customer_experience.png
 │   ├── dashboard_customer_churn_analysis.png
 │   └── dashboard_customer_deep_dive.png
-
+```
 ---
 
 ## Repository Structure
