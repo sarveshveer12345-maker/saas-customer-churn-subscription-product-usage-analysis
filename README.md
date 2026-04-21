@@ -797,19 +797,19 @@ There was no meaningful increase in churn as resolution time increased in this d
 Based on the analysis, the following actions would be prioritized to reduce churn and protect revenue:
 
 1. **Protect High-Value Enterprise Accounts Immediately**
-   Identify Enterprise customers with rising support tickets, escalations, or declining satisfaction and assign dedicated account management to prevent    high-impact revenue loss.
+   - Identify Enterprise customers with rising support tickets, escalations, or declining satisfaction and assign dedicated account management to            prevent high-impact revenue loss.
 
 2. **Fix High-Impact Product Issues and Feature Gaps**
-   Prioritize improvements in the most-used features and address top churn-related complaints, especially around missing functionality and unstable        beta features.
+   - Prioritize improvements in the most-used features and address top churn-related complaints, especially around missing functionality and unstable        beta features.
 
 3. **Build a Proactive Churn Risk Monitoring System**
-   Develop a churn alert framework using leading indicators such as ticket volume, escalation rate, satisfaction score, and usage drops to intervene       before customers cancel.
+   - Develop a churn alert framework using leading indicators such as ticket volume, escalation rate, satisfaction score, and usage drops to intervene       before customers cancel.
 
 4. **Improve Support Quality, Not Just Speed**
-   Focus on resolving root causes of customer issues rather than just reducing resolution time, as escalations and repeated issues are more strongly       linked to churn.
+   - Focus on resolving root causes of customer issues rather than just reducing resolution time, as escalations and repeated issues are more strongly       linked to churn.
 
 5. **Target High-Risk Industries with Tailored Strategies**
-   Design industry-specific onboarding, feature enhancements, and support strategies for segments like DevTools and FinTech that show both high churn      and high support demand.
+   - Design industry-specific onboarding, feature enhancements, and support strategies for segments like DevTools and FinTech that show both high churn      and high support demand.
 
 These actions shift the business from reactive churn analysis to proactive customer retention and revenue protection.
 
